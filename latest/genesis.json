@@ -1,0 +1,1423 @@
+{
+  "genesis_time": "2019-03-13T23:00:00Z",
+  "chain_id": "okchain",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "auth": {
+      "collected_fees": [],
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "accounts": [
+      {
+        "address": "okchain1005qzgwplwu8hf9pjhhtlm0t2x27hypp57f0mu",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain10522rrml4dmgaj530r92w2qew9nmqlcgxm97zf",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain10q0rk5qnyag7wfvvt7rtphlw589m7frsmyq4ya",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000000000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain124mzxa0kw6nxmurcf6a377atf9rv23zfpj6svu",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain15qkk7yc7m093k6lt390a94lglkjg4rpypx5j52",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain15uvyggfzu6kzhaxnn2fxspwn67z6rd48ntgmuj",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain17rq4aksvl85rl4fz30d3c4cdkavhxw0qaxc63u",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain18meqz73vmqv68cckja7nrnez25xgl6wyykvtkr",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1alq9na49n9yycysh889rl90g9nhe58lcv27tfj",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1f30s7eh66pxnuju0j8jyap5hl4jd338wwkq8k3",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1g7znsf24w4jc3xfca88pq9kmlyjdare68lx3kq",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1k2ssqpjdwayc95jjulw4c7e6kssh7qfdjjntq7",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1k636gv2ryz6u265zxdgclsekttrmsup48cyr7r",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1m3gmu4zlnv2hmqfu2jwr97r2653w9yshyvde07",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "2000000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1mnf7mxlavumkdrg83gddvcn6q5zezytczumrec",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1q320ka5aegh9nkk9pmdc2f0yqd4u9azuy5nms7",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1qsh9glry73nwjkdqzc3r32x2kadul2vqpsfvwe",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1rc4pac7h38rzc36xtg6jk0vykh4cll2xr362l9",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1s9y6m92uylw4zu50m9jg49fc8e4fh5r3cz8n75",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1svzxp4ts5le2s4zugx34ajt6shz2hg42p0e6tw",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1t5xrrecfduaneljazxxx99wgev385vfqgyclz9",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1ug7tl6rw4ak4r4jg4wntw2vu9rduzheyn5t480",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      },
+      {
+        "address": "okchain1vs3smyf0pkcpuflc3yqe3kcr64292v2s9jkk9e",
+        "coins": [
+          {
+            "denom": "tokt",
+            "amount": "1000.00000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": null,
+        "delegated_free": null,
+        "delegated_vesting": null,
+        "start_time": "0",
+        "end_time": "0"
+      }
+    ],
+    "distr": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.02000000",
+      "base_proposer_reward": "0.01000000",
+      "bonus_proposer_reward": "0.04000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "staking": {
+      "pool": {
+        "not_bonded_tokens": "100000000000000000",
+        "bonded_tokens": "0"
+      },
+      "params": {
+        "unbonding_time": "300000000000",
+        "max_validators": 21,
+        "max_entries": 7,
+        "bond_denom": "tokt"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.50000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.05000000",
+        "slash_fraction_downtime": "0.01000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "proposals": null,
+      "params": {
+        "text_max_deposit_period": "86400000000000",
+        "text_min_deposit": [
+          {
+            "denom": "tokt",
+            "amount": "100.00000000"
+          }
+        ],
+        "text_voting_period": "259200000000000",
+        "param_change_max_deposit_period": "86400000000000",
+        "param_change_min_deposit": [
+          {
+            "denom": "tokt",
+            "amount": "100.00000000"
+          }
+        ],
+        "param_change_voting_period": "259200000000000",
+        "param_change_max_block_height_period": "100000",
+        "app_upgrade_max_deposit_period": "86400000000000",
+        "app_upgrade_min_deposit": [
+          {
+            "denom": "tokt",
+            "amount": "100.00000000"
+          }
+        ],
+        "app_upgrade_voting_period": "259200000000000",
+        "dex_list_max_deposit_period": "86400000000000",
+        "dex_list_min_deposit": [
+          {
+            "denom": "tokt",
+            "amount": "20000.00000000"
+          }
+        ],
+        "dex_list_voting_period": "259200000000000",
+        "dex_list_vote_fee": [
+          {
+            "denom": "tokt",
+            "amount": "0.00000000"
+          }
+        ],
+        "dex_list_max_block_height": "10000",
+        "dex_list_fee": [
+          {
+            "denom": "tokt",
+            "amount": "100000.00000000"
+          }
+        ],
+        "dex_list_expire_time": "86400000000000",
+        "quorum": "0.33400000",
+        "threshold": "0.50000000",
+        "veto": "0.33400000",
+        "yes_end_vote_period": "0.66700000",
+        "max_tx_num_per_block": "1000"
+      }
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.13000000",
+        "annual_provisions": "0.00000000"
+      },
+      "params": {
+        "mint_denom": "tokt",
+        "inflation_rate_change": "0.13000000",
+        "inflation_max": "0.20000000",
+        "inflation_min": "0.07000000",
+        "goal_bonded": "0.67000000",
+        "blocks_per_year": "6311520"
+      }
+    },
+    "gentxs": [
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val5",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1q320ka5aegh9nkk9pmdc2f0yqd4u9azuy5nms7",
+                "validator_address": "okchainvaloper1q320ka5aegh9nkk9pmdc2f0yqd4u9azuc2z79c",
+                "pubkey": "okchainvalconspub1zcjduepqz7npagdg6pw53ez26227yj6qh0hdkw5wekgqnkrgw0q4afycllhspxq7u6",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Atm8F7XGEgimx9LYR20NcBbQZttlAPlaIcaBXPMxC+U7"
+              },
+              "signature": "voJiXKVwpZfq9+SDJeQPEFH4egN38niP0oy1qwGiUVUzxdBecO5honaeFclKUiVLlczXUNRs/PEwc+VdNQ7yOw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val7",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1ug7tl6rw4ak4r4jg4wntw2vu9rduzheyn5t480",
+                "validator_address": "okchainvaloper1ug7tl6rw4ak4r4jg4wntw2vu9rduzhey026sjf",
+                "pubkey": "okchainvalconspub1zcjduepqw0v9ehcqz8f2zcmx2raf3judmx0h0qk6hwcaf6m3rqw8za6xvcpqzxtvve",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A0HPi3YgnJAnwbxgSd5nvTTzD/U+jXbXepVDAcEAuMid"
+              },
+              "signature": "54F1RDmld2v/ET31ii+rzMU2AmbMfMZCIR9fop6wGcAAG9cwj7M+eOEv/rKw0fyk0QuDbM+SywM8FTtx3GNJwQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val18",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1t5xrrecfduaneljazxxx99wgev385vfqgyclz9",
+                "validator_address": "okchainvaloper1t5xrrecfduaneljazxxx99wgev385vfq56f6hr",
+                "pubkey": "okchainvalconspub1zcjduepq9x68382ue84xds566tmsnfrk250dzwx7uyw9vty0r6qrrcyn5weqe0peq4",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AjZE8Q9pRgFN1BBWlqZeobqsoM0sEqttnSf3Rr3jXQDD"
+              },
+              "signature": "sq2EO7icj9E5mcW9I5CvOxnd9q433zoBi3rKPRjbM0hqRalUxt+9pDPLKsGfQE4lLsv4yH+jkJ8xLh6hbbI7TA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val19",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1k636gv2ryz6u265zxdgclsekttrmsup48cyr7r",
+                "validator_address": "okchainvaloper1k636gv2ryz6u265zxdgclsekttrmsup4mx4xt9",
+                "pubkey": "okchainvalconspub1zcjduepqc4r4sccsrfkjse79lf8gumd8mej24vv9q2lt0za7ut0tdde3l4fsw45hv6",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A+3fDnaGinv6ujZJZ2zA6wMTO3FBeiwAw+j0C7YAVJtA"
+              },
+              "signature": "fcia14NVuu7Lhk6aG2uP411xb4f0s4z6in99mLedG7NWbuN4r79qEYPMbwIQy9VzSiPbFj/7dcUB0wfyFvmQ7A=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val16",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain15uvyggfzu6kzhaxnn2fxspwn67z6rd48ntgmuj",
+                "validator_address": "okchainvaloper15uvyggfzu6kzhaxnn2fxspwn67z6rd4804e7f5",
+                "pubkey": "okchainvalconspub1zcjduepqwh5jdduhq2udpyn79qd0kev0ar2q5q9j7nx7k3d3p0rlshs0sunqkvev5n",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AxnC4c1FIIeyY8rJlUNdgRdiCCCB8Bh+UHL/3xifUsw0"
+              },
+              "signature": "l0nXAAOLzSHwSiraoUPjD4IYKLOuvrEt8Uk9StDyZc09G2zRSpbOJN1G+7H47sKK2BKgbO3msSRawDMj7QuJHA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val4",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain124mzxa0kw6nxmurcf6a377atf9rv23zfpj6svu",
+                "validator_address": "okchainvaloper124mzxa0kw6nxmurcf6a377atf9rv23zfavt4e6",
+                "pubkey": "okchainvalconspub1zcjduepqyjszm3x3j5m66hhzy4pf0jxn4r53zww5kv4snj65stt9270aw9nqm3ezk2",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A0vhYFRrafghsmccKXUzpuyjY3KB0cI/0e5uZgdMOcn/"
+              },
+              "signature": "heHMAtCtfWehzpSxfWOjKojXmFsq+HMc5K//HUsDUj82/YXcB8PqInxblQMhYgt3y94VHc4+Nb65zw5Wo7ANqw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val15",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain10522rrml4dmgaj530r92w2qew9nmqlcgxm97zf",
+                "validator_address": "okchainvaloper10522rrml4dmgaj530r92w2qew9nmqlcg695mh0",
+                "pubkey": "okchainvalconspub1zcjduepq9eeda9uryxrk4904hqj8mx83y4750zl6t0klt46jp79pepuz7p7qz794vr",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AyOD3h28ouZUaXio8MBazHF9Rvak0PAg8Cg/IQmlRKXk"
+              },
+              "signature": "m7Tp0D+5s3C3QsVmtv3NeolJbzW6ZctcMijjc2Rc4ux0L76L4qmVoA/BhSggIH8huWEgBNbhLyNwjVceVxmAPQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val8",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1k2ssqpjdwayc95jjulw4c7e6kssh7qfdjjntq7",
+                "validator_address": "okchainvaloper1k2ssqpjdwayc95jjulw4c7e6kssh7qfdwvzw4c",
+                "pubkey": "okchainvalconspub1zcjduepq94k2ekkkx8e44qgmwhmwsnh9gxmq6pujzsx7tqrf789h0xjk046qndjarq",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8ulC317gl8zhFMSF7Qg6TaKXCYoH9qP+sF4T03swwYk"
+              },
+              "signature": "AEEBF3m5xGIER3w6xpCJf/lVi88dK5X9EJ7ft8oEnbQDy06/+ovoYdaInI6CzfMTRz6stszl/q2F3C3iRNDJJQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val10",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain15qkk7yc7m093k6lt390a94lglkjg4rpypx5j52",
+                "validator_address": "okchainvaloper15qkk7yc7m093k6lt390a94lglkjg4rpyac9hpv",
+                "pubkey": "okchainvalconspub1zcjduepqw2rqc8227ng24cjd0ccjvzfxn35fc8fnd4cg2n6kyfrgd82r83lqpk3u4k",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A57nxaIHTROdrvzxjLvUnaZREtsdcdVVXWLi71NcK8ZS"
+              },
+              "signature": "tRuP9Hb07kpqs6oTjzbJSQ4ftRbJuBFgttsT6qqLS+cQfeXYxxCoIHT8igoynlnR+YcgNqM1y6r0MoHLJKlidg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val11",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1rc4pac7h38rzc36xtg6jk0vykh4cll2xr362l9",
+                "validator_address": "okchainvaloper1rc4pac7h38rzc36xtg6jk0vykh4cll2xl0t02r",
+                "pubkey": "okchainvalconspub1zcjduepqyyy4g578mg08nxr6uf6vl9l0wzq2k25u86pmfuf9gyfuqt5gv3qqhhduct",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AhfPdHUXdnIIVLqnRHWfIZhilMh4mrGnaVHmtPDysNWg"
+              },
+              "signature": "YvUVA1p4o0pIf3kauAahLQMsCjP27bbF2dY2JEoEwRgrfIgC8W0ZrTP/HWBHFpxL/Wguw1q3VYumsSbL45uIKg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val13",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1f30s7eh66pxnuju0j8jyap5hl4jd338wwkq8k3",
+                "validator_address": "okchainvaloper1f30s7eh66pxnuju0j8jyap5hl4jd338wjg3zrh",
+                "pubkey": "okchainvalconspub1zcjduepqdtckh0697kdghss24hekfnvwpzhu4ac4dj5uygzef042jl7f6u2q0h499j",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Aw//kp2COrBnPeG75RqQ85EBhiTYIjTwuEF1mZmfpmFE"
+              },
+              "signature": "wnjLFkNlSMO3gf/cKqNdO4zuArcw0xAaD50/PgOeGg0F5AKGLy0YuP3/lxS9c2vKrkOlDnhAWCLF/pO5KZ1j6A=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val20",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1mnf7mxlavumkdrg83gddvcn6q5zezytczumrec",
+                "validator_address": "okchainvaloper1mnf7mxlavumkdrg83gddvcn6q5zezytc7z2xv7",
+                "pubkey": "okchainvalconspub1zcjduepq8hl6slpltrkfw7vlk27epkasvuensh0zkjk44c00wtj6tgk2dy8shm6qc4",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8vF5sJkymyhO155Cdr3RkiXr0fZZ0v7kihKjnLXnF3W"
+              },
+              "signature": "qFhbFD0Yu1WBejyPz0aBga7iSR/U1+L4gi3ycn29mmpiHTgm4mk8k4F345keiUEsAFy+YtQQaN+U5jLZ/tUugg=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val17",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain18meqz73vmqv68cckja7nrnez25xgl6wyykvtkr",
+                "validator_address": "okchainvaloper18meqz73vmqv68cckja7nrnez25xgl6wycgawr9",
+                "pubkey": "okchainvalconspub1zcjduepqppt6nxrh5jnqrffyj8f7wq0zzge7qh6lcf5ruu704pzd8qr8zprsafhetk",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AotDwbHtld8Ov1u9pzWgre7OBgU7Rwvvo3igPonQoFdI"
+              },
+              "signature": "Fhgrw7mbWkPKdsxzc2hBEYe94U3AOV5hLHcDtbpi9Fw2jQ0cTYZ/GTUl10yLE0DWe63g6KzRxFMbS6tU45gkzQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val2",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1svzxp4ts5le2s4zugx34ajt6shz2hg42p0e6tw",
+                "validator_address": "okchainvaloper1svzxp4ts5le2s4zugx34ajt6shz2hg42a3gl7g",
+                "pubkey": "okchainvalconspub1zcjduepq0epr5evlnzvtj63vvzw8jmw8vxxmpkjh2rld0j62ynnfv8lxcuzqr3w6k3",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AkG60gNR9Usa4+tiTkmX5Ke240HkyQrR0lSQwRfs/yhP"
+              },
+              "signature": "0QNiGypjCZNHhaTSlfsZ8smOkHYmC7qXueA1untEJ2Ayp3CrHfjxWkcPjVkqMyVqQloTubddfwY+sW8Ap7D88w=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val3",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1005qzgwplwu8hf9pjhhtlm0t2x27hypp57f0mu",
+                "validator_address": "okchainvaloper1005qzgwplwu8hf9pjhhtlm0t2x27hyppgqc2w6",
+                "pubkey": "okchainvalconspub1zcjduepqs6xfkt92nll9knum5an2uuffzm8wwwhk4hu2nxthf8dmjq5cm9jqcg5eal",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AlBCZ15uyYEN9pMGQDLtzsHPsfRRcvn/mvtQ+rDywZx7"
+              },
+              "signature": "XFEkfJjFi29GiuzUJins0VT0E3QXs6juwjU+xIyJaQs6tKkRulXHDy/w4WnkqrVH6CtKnnRkH2yttREwgZ/bdA=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val14",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1s9y6m92uylw4zu50m9jg49fc8e4fh5r3cz8n75",
+                "validator_address": "okchainvaloper1s9y6m92uylw4zu50m9jg49fc8e4fh5r3yukktj",
+                "pubkey": "okchainvalconspub1zcjduepqqqhnky9y2a94mt6fxdz4wt2qwgnkthzfwh6d93g6wemqzcscppfq4evkdk",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A4E0m8T8ztZIpAmi40c4BsbeBo9vOeFUY9ARbRT9bctB"
+              },
+              "signature": "APbM1skzUiiQjeEUA4rycC4DuQuMCwVfRj2S8j1ZSLQWQCuWqDTJuL9OOGQlTfxUuOoUYZHrJnpQ+8sWU1hWuQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val0",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1g7znsf24w4jc3xfca88pq9kmlyjdare68lx3kq",
+                "validator_address": "okchainvaloper1g7znsf24w4jc3xfca88pq9kmlyjdare6mph5rx",
+                "pubkey": "okchainvalconspub1zcjduepqtv2yy90ptjegdm34vfhlq2uw9eu39hjrt98sffj7yghl4s47xv7swuf0dx",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A9nXtHH1N6ru6t++v4Y/Ch5MUY/U9ZVLGJv7YHnFKIHx"
+              },
+              "signature": "vdkFFLQaGFQkbD5ahlnZAz6jmztMfVI3oc1mljd79v52mE0tCTcQUzbmZkMcItui5lpDjivB91M2Z2FUV3RJqQ=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val9",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain17rq4aksvl85rl4fz30d3c4cdkavhxw0qaxc63u",
+                "validator_address": "okchainvaloper17rq4aksvl85rl4fz30d3c4cdkavhxw0qpcfly6",
+                "pubkey": "okchainvalconspub1zcjduepqm5xp65zns2pepzyg3ry58newrlnxnd70hj23njzadngcnua8v35qfdh9w3",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A8H4y8kdxp+dEMUn8kFxMahWwz4XTaRNBSGH4HMzDFuH"
+              },
+              "signature": "Bz54XpcbJzIhqB1lyfMvRFYmf1Vhf524CS3oL2QX/Yh/KIbiHQxLORlXAXYdYVlvSJtb6FWBNn+xFo10okyncw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val1",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1alq9na49n9yycysh889rl90g9nhe58lcv27tfj",
+                "validator_address": "okchainvaloper1alq9na49n9yycysh889rl90g9nhe58lcs50wu5",
+                "pubkey": "okchainvalconspub1zcjduepq6ml2709hf3j6hjddes4ns548l6muhkxlphlm2t3tf377he62ckeqjt5x9r",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "A4z7PUbHO2NsfqQRKU/DogWD1TVlfejH1o2lvFWGyjMP"
+              },
+              "signature": "GiNnJakaBoEOvkwDxSmDNI4g7fVKiySYkg/SUp3Rn5hD3XLhhdLJxOr51P7tzmfLRh1SDSQXPe0I2zUX8vSR8A=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val6",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1vs3smyf0pkcpuflc3yqe3kcr64292v2s9jkk9e",
+                "validator_address": "okchainvaloper1vs3smyf0pkcpuflc3yqe3kcr64292v2sev8nsl",
+                "pubkey": "okchainvalconspub1zcjduepqsxzsjn43tmy7hrymllq2kr88yhnr8f3vn3rk3wefma46rhxhyntqjmpczl",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "Age20vx6HmYrrHS/fUVko6dnInsKuSL/dCy/NAb+fADk"
+              },
+              "signature": "vrBGRxKXEMxA2bXDi1HqQdgEAiifVLcsVgQKSFSAQW8gf6g0byb7CbNNIxUyUFjsfxz/4vhdT1Q/RphABGj4bw=="
+            }
+          ],
+          "memo": ""
+        }
+      },
+      {
+        "type": "auth/StdTx",
+        "value": {
+          "msg": [
+            {
+              "type": "cosmos-sdk/MsgCreateValidator",
+              "value": {
+                "description": {
+                  "moniker": "val12",
+                  "identity": "",
+                  "website": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.10000000",
+                  "max_rate": "0.50000000",
+                  "max_change_rate": "0.01000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "okchain1qsh9glry73nwjkdqzc3r32x2kadul2vqpsfvwe",
+                "validator_address": "okchainvaloper1qsh9glry73nwjkdqzc3r32x2kadul2vqawcfml",
+                "pubkey": "okchainvalconspub1zcjduepq8jr56mhvmjh9xeqfmwf3w3mwfwzp732murf9erfgsxnvpecc7aqqw6pjnk",
+                "value": {
+                  "denom": "tokt",
+                  "amount": "1.00000000"
+                }
+              }
+            }
+          ],
+          "signatures": [
+            {
+              "pub_key": {
+                "type": "tendermint/PubKeySecp256k1",
+                "value": "AwSmaam5/LvXlhqjuq+16g83R/0/XQNNNR7HRkWOs4lF"
+              },
+              "signature": "80ZEt1V1F60LyvfuLDTcs5qoN01Yv2LzwupvQ4op5kgbVHgFzad3rvdEUAYhJZYII6EDhOPMHFN2BdWQc+W0sg=="
+            }
+          ],
+          "memo": ""
+        }
+      }
+    ],
+    "order": {
+      "params": {
+        "order_expire_blocks": "259200",
+        "max_deals_per_block": "1000",
+        "new_order": "0.00000000",
+        "cancel_fee_rate_native": "0.00050000",
+        "expire_fee_rate_native": "0.00050000",
+        "trade_fee_rate": "0.00100000",
+        "trade_fee_rate_native": "0.00040000"
+      }
+    },
+    "token": {
+      "params": {
+        "list_asset": "100000.00000000",
+        "issue_asset": "20000.00000000",
+        "mint_asset": "2000.00000000",
+        "burn_asset": "100.00000000",
+        "transfer": "0.01250000",
+        "freeze_asset": "0.10000000",
+        "unfreeze_asset": "0.10000000",
+        "list_period": "86400000000000",
+        "list_proposal_min_deposit": "20000.00000000"
+      },
+      "info": [
+        {
+          "desc": "OKChain token in testnet",
+          "symbol": "tokt",
+          "originalSymbol": "TOKT",
+          "wholeName": "Testnet OK token",
+          "totalSupply": "1000000000",
+          "owner": "okchain10q0rk5qnyag7wfvvt7rtphlw589m7frsmyq4ya",
+          "mintable": true
+        }
+      ]
+    }
+  }
+}
