@@ -29,7 +29,7 @@ d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656
 ## Legacy Testnets
 ### *January 9, 2020 05:00 UTC* -okchain-v0.8
 
-Download the [genesis file](https://github.com/okex/testnets/blob/master/v0.8/genesis.json)
+Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.8/genesis.json)
 
 ```bash
 $ shasum -a 256 genesis.json
