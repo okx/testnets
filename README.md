@@ -12,6 +12,7 @@ To get started with the latest testnet, see the
 ## Testnet Status
 
 ⚠️ Latest testnet: [okchain-v0.10](./latest) ⚠️
+* *May 22, 2020 10:19 UTC* -okchain-v0.10
 
 Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/latest/genesis.json)
 
