@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 
 ⚠️ Latest testnet: [okchain-v0.10](./latest) ⚠️
 
-Download the [genesis file](https://github.com/okex/testnets/blob/master/latest/genesis.json)
+Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/latest/genesis.json)
 
 ```bash
 $ shasum -a 256 genesis.json
