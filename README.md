@@ -11,7 +11,7 @@ To get started with the latest testnet, see the
 
 ## Testnet v0.10 Status
 
-Download the genesis here: [genesis.json](https://github.com/okex/testnets/blob/master/latest/genesis.json)
+Download the [genesis file](https://github.com/okex/testnets/blob/master/latest/genesis.json)
 
 ```bash
 $ shasum -a 256 genesis.json
