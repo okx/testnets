@@ -10,7 +10,7 @@ To get started with the latest testnet, see the
 [docs](https://okchain-docs.readthedocs.io/en/latest/getting-start/join-okchain-testnet.html).
 
 ## Testnet Status
-Source Code: [latest released version](https://github.com/okex/okchain/release)
+Source Code: [latest released version](https://github.com/okex/okchain/releases)
 
 ⚠️ Latest testnet: [okchain-v0.10](./latest) ⚠️
 * *May 22, 2020 10:19 UTC* - okchain-v0.10
