@@ -13,12 +13,11 @@ make install
 ```
 # 结束进程
 ```
-- 用okchaind（v0.10.10）导出genesis.json
+- 用官方指定的高度导出genesis.json
 ```
-./okchaind export --for-zero-height --height=9190000 --home /data/okchain_data/val16/okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9190000 --home $HOME/.okchaind --log_level="*:error" > export.json
 ```
-注1：指定高度，前100或1万的整数倍的高度。  
-注2：导出需要1分钟左右
+注：--height=9190000 参数必须与官方保持一致。不同的高度会导致导出的export.json不同。
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```
@@ -26,9 +25,9 @@ $shasum -a 256 genesis.json
 ```
 
 
-### 3. 使用okchain v0.11.0分支，生成新的okchaind
+### 3. 使用okchain v0.11.0分支代码，生成新的okchaind
 
-- 下载最新的okchain v0.11.0版本代码，生成新的okchaind
+- 使用最新的okchain v0.11.0分支代码，生成新的okchaind
 ```
 cd okchain
 git checkout v0.11.0
@@ -44,9 +43,9 @@ okchaind version --long
 ### 4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json
 - 用新的okchaind，执行migrate操作，更新genesis.json
 ```
-mv genesis.json export.json
 okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
 ```
+
 - 使用sha256生成摘要，并比对官方的摘要
 ```
 $shasum -a 256 genesis.json
@@ -54,6 +53,10 @@ $shasum -a 256 genesis.json
 
 ### 5. 使用新的genesis.json重启服务
 - 删除旧数据（或备份）
+```
+rm $HOME/.okchaind/config/addrbook.json $HOME/.okchaind/config/genesis.json
+okchaind unsafe-reset-all # 建议属于okchaind命令删除
+```
 - 将genesis.json复制到~/okchaind/config/目录下
 - 重启
 
