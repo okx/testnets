@@ -27,7 +27,7 @@ git checkout release/v0.10.10
 git pull
 make testnet
 ```
-注：make 参数待最新参数公布后再更新
+注：make 参数待最新高度公布后再更新
 
 ### 2. 使用v0.10.10的okchaind 导出当前genesis.json
 - 停掉当前节点
