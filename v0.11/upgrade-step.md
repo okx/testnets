@@ -29,7 +29,7 @@ make testnet
 ```
 注：make 参数待最新参数公布后再更新
 
-### 2. 使用v0.10.10的okchaind export出旧genesis.json
+### 2. 使用v0.10.10的okchaind 导出当前genesis.json
 - 停掉当前节点
 ```
 # 结束进程
@@ -38,7 +38,7 @@ make testnet
 ```
 ./okchaind export --for-zero-height --height=9190000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-注：--height=9190000 参数必须与官方保持一致。不同的高度会导致导出的export.json不同。
+注：--height=9190000 参数必须与官方保持一致。不同的高度会导致export.json不同
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```
@@ -78,7 +78,7 @@ $shasum -a 256 genesis.json
 ### 5. 使用新的genesis.json重启服务
 - 删除旧数据（或备份）
 ```
-okchaind unsafe-reset-all # 建议先备份，带新网络正常启动后再删除
+okchaind unsafe-reset-all # 建议先备份，待新网络正常启动后再删除
 ```
 - 将genesis.json复制到/path/to/okchaind/config/目录下
 - 重启当前节点
