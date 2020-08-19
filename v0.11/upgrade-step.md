@@ -1,12 +1,33 @@
 # 升级步骤
+
+## 方式一：
+### 1. 下载官方提供的genesis.json
+下载地址：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
+
+### 2. 使用新的genesis.json重启服务
+- 停掉当前节点
+```
+# 结束进程
+```
+- 删除旧数据（或备份）
+```
+okchaind unsafe-reset-all # 建议先备份，带新网络正常启动后再删除
+```
+- 将genesis.json复制到/path/to/okchaind/config/目录下
+- 重启当前节点
+
+
+
+## 方式二：
 ### 1. 生成v0.10.10的okchaind
 - 切换okchain分支至v0.10.10，生成okchaind
 ```
 cd okchain
 git checkout release/v0.10.10
 git pull
-make install
+make testnet
 ```
+注：make 参数待最新参数公布后再更新
 
 ### 2. 使用v0.10.10的okchaind export出旧genesis.json
 - 停掉当前节点
@@ -15,7 +36,7 @@ make install
 ```
 - 用官方指定的高度导出genesis.json
 ```
-./okchaind export --for-zero-height --height=9190000 --home $HOME/.okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9190000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
 注：--height=9190000 参数必须与官方保持一致。不同的高度会导致导出的export.json不同。
 
@@ -23,6 +44,7 @@ make install
 ```
 $shasum -a 256 genesis.json
 ```
+注：官方摘要是
 
 
 ### 3. 使用okchain v0.11.0分支代码，生成新的okchaind
@@ -50,15 +72,16 @@ okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesi
 ```
 $shasum -a 256 genesis.json
 ```
+注：官方摘要是
+
 
 ### 5. 使用新的genesis.json重启服务
 - 删除旧数据（或备份）
 ```
-rm $HOME/.okchaind/config/addrbook.json $HOME/.okchaind/config/genesis.json
-okchaind unsafe-reset-all # 建议属于okchaind命令删除
+okchaind unsafe-reset-all # 建议先备份，带新网络正常启动后再删除
 ```
-- 将genesis.json复制到~/okchaind/config/目录下
-- 重启
+- 将genesis.json复制到/path/to/okchaind/config/目录下
+- 重启当前节点
 
 
 
