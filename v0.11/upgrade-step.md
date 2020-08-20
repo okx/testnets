@@ -5,7 +5,7 @@
 下载地址：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
 
 
-### 方式2：自己migrate（推荐）
+### 方式2：自己migrate出genesis.json（推荐）
 #### 1. 编译v0.10.10的okchaind
 - 切换okchain分支至v0.10.10，编译okchaind，如果
 ```
