@@ -58,7 +58,7 @@ git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
 make GenesisHeight=9460000 install
 ```
-注：GenesisHeight=9250000 参数待最新高度公布后再更新
+注：GenesisHeight=9460000 参数必须与官方保持一致。
 
 - 查看版本号，确认是v0.11.0
 ```
