@@ -26,7 +26,6 @@ git clone https://github.com/okex/okchain.git -b v0.10.10
 cd okchain
 make install
 ```
-注：make 参数待最新高度公布后再更新
 
 - 查看版本号，确认是v0.10.10
 ```
@@ -59,6 +58,8 @@ git clone https://github.com/okex/okchain.git -b release/v0.11.0
 cd okchain
 make GenesisHeight=9250000 install
 ```
+注：GenesisHeight=9250000 参数待最新高度公布后再更新
+
 - 查看版本号，确认是v0.11.0
 ```
 okchaind version --long
