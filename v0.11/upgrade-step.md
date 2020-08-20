@@ -2,7 +2,7 @@
 * [升级至v0.11.0需要两步](#升级至v0110需要两步)
   * [步骤一：得到最新的genesis.json文件](#步骤一得到最新的genesisjson文件)
      * [方式1：直接下载官方提供的genesis.json](#方式1直接下载官方提供的genesisjson)
-     * [方式2：自己migrate出genesis.json（推荐）](#方式2自己migrate出genesisjson推荐)
+     * [方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)](#方式2自己migrate出genesisjson推荐)
         * [1. 编译v0.10.10的okchaind](#1-编译v01010的okchaind)
         * [2. 使用v0.10.10的okchaind导出当前genesis.json](#2-使用v01010的okchaind导出当前genesisjson)
         * [3. 使用okchain v0.11.0分支代码，编译新的okchaind](#3-使用okchain-v0110分支代码编译新的okchaind)
@@ -18,7 +18,7 @@
 下载地址：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
 
 
-### 方式2：自己migrate出genesis.json（推荐）
+### 方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)
 #### 1. 编译v0.10.10的okchaind
 - 切换okchain分支至v0.10.10，编译okchaind，如果
 ```
