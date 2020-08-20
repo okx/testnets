@@ -27,9 +27,19 @@ cd okchain
 make install
 ```
 
-- 查看版本号，确认是v0.10.10
+- 查看版本号，确认是版本和commitID
 ```
 okchaind version --long
+
+name: okchain
+server_name: okchaind
+client_name: okchaincli
+version: v0.10.8
+commit: cdbfdc8c32292569227d0755f588ddcf45c4364b
+build_tags: netgo
+go: go version go1.13.12 linux/amd64
+cosmos_sdk: v0.37.9
+tendermint: v0.32.10
 ```
 
 #### 2. 使用v0.10.10的okchaind导出当前genesis.json
@@ -60,9 +70,19 @@ make GenesisHeight=9460000 install
 ```
 注：GenesisHeight=9460000 参数必须与官方保持一致。
 
-- 查看版本号，确认是v0.11.0
+- 查看版本号，确认版本和commitID
 ```
 okchaind version --long
+
+name: okchain
+server_name: okchaind
+client_name: okchaincli
+version: v0.11.0
+commit: 808fa9b55530affc7a3a1a1bb8384c58eb6d3512
+build_tags: netgo
+go: go version go1.14.2 darwin/amd64
+cosmos_sdk: v0.37.9
+tendermint: v0.32.10
 ```
 
 
