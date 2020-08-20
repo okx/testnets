@@ -25,7 +25,7 @@
 git clone https://github.com/okex/okchain.git -b release/v0.10.10
 cd okchain
 git pull
-make testnet
+make install
 ```
 注：make 参数待最新高度公布后再更新
 
@@ -41,9 +41,9 @@ okchaind version --long
 ```
 - 用官方指定的高度导出genesis.json
 ```
-./okchaind export --for-zero-height --height=9190000 --home /path/to/okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-注：--height=9190000 参数必须与官方保持一致。不同的高度会导致export.json不同
+注：--height=9460000 参数必须与官方保持一致。不同的高度会导致export.json不同
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```
@@ -59,7 +59,7 @@ $shasum -a 256 export.json
 git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
 git pull
-make install
+make GenesisHeight=9460000 install
 ```
 - 查看版本号，确认是v0.11.0
 ```
