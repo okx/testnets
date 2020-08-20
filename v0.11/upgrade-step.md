@@ -22,13 +22,17 @@
 #### 1. 编译v0.10.10的okchaind
 - 切换okchain分支至v0.10.10，编译okchaind，如果
 ```
-git clone https://github.com/okex/okchain.git
+git clone https://github.com/okex/okchain.git -b release/v0.10.10
 cd okchain
-git checkout release/v0.10.10
 git pull
 make testnet
 ```
 注：make 参数待最新高度公布后再更新
+
+- 查看版本号，确认是v0.10.10
+```
+okchaind version --long
+```
 
 #### 2. 使用v0.10.10的okchaind导出当前genesis.json
 - 停掉当前节点
@@ -52,8 +56,8 @@ $shasum -a 256 export.json
 
 - 使用最新的okchain v0.11.0分支代码，编译新的okchaind
 ```
+git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
-git checkout v0.11.0
 git pull
 make install
 ```
