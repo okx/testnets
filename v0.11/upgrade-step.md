@@ -1,36 +1,37 @@
 
-* [升级至v0.11.0需要两步](#升级至v0110需要两步)
-  * [步骤一：得到最新的genesis.json文件](#步骤一得到最新的genesisjson文件)
-     * [方式1：直接下载官方提供的genesis.json](#方式1直接下载官方提供的genesisjson)
-     * [方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)](#方式2自己migrate出genesisjson推荐)
-        * [1. 编译v0.10.10的okchaind](#1-编译v01010的okchaind)
-        * [2. 使用v0.10.10的okchaind导出当前genesis.json](#2-使用v01010的okchaind导出当前genesisjson)
-        * [3. 使用okchain v0.11.0分支代码，编译新的okchaind](#3-使用okchain-v0110分支代码编译新的okchaind)
-        * [4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json](#4-使用v0110的-okchaind-执行-migrate更新genesisjson)
-  * [步骤二：重启节点](#步骤二重启节点)
-     * [1. 使用新的genesis.json重启服务](#1-使用新的genesisjson重启服务)
+* [2 steps to update to v0.11.0](#2-steps-to-update-to-v0110)
+  * [Step 1：Get the latest genesis.json file](#step-1get-the-latest-genesisjson-file)
+     * [Method 1：Download genesis.json from the below URL](#method-1download-genesisjson-from-the-below-url)
+     * [Method 2：Generate latest genesis.json through okchaind migrate(Recomended)](#method-2generate-latest-genesisjson-through-okchaind-migraterecomended)
+        * [1. Compile okchaind v0.10.10](#1-compile-okchaind-v01010)
+        * [2. use okchaind v0.10.10 to export genesis.json](#2-use-okchaind-v01010-to-export-genesisjson)
+        * [3. Use okchain v0.11.0 code to compile new okchaind](#3-use-okchain-v0110-code-to-compile-new-okchaind)
+        * [4. use okchaind v0.11.0 to execute migrate, update genesis.json](#4-use-okchaind-v0110-to-execute-migrate-update-genesisjson)
+  * [Step 2：Restart node](#step-2restart-node)
+     * [1. Use new genesis.json to restart](#1-use-new-genesisjson-to-restart)
 
 
-# 升级至v0.11.0需要两步
-
-## 步骤一：得到最新的genesis.json文件
-### 方式1：直接下载官方提供的genesis.json
-下载地址：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
 
 
-### 方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)
-#### 1. 编译v0.10.10的okchaind
-- 切换okchain分支至v0.10.10，编译okchaind，如果
+# 2 steps to update to v0.11.0
+
+## Step 1：Get the latest genesis.json file
+### Method 1：Download genesis.json from the below URL
+Download URL：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
+
+
+### Method 2：Generate latest genesis.json through `okchaind migrate`(Recomended)
+#### 1. Compile okchaind v0.10.10
+- Switch okchain branch to v0.10.10, compile okchaind, if
 ```
 git clone https://github.com/okex/okchain.git -b v0.10.10
 cd okchain
 make install
 ```
 
-- 查看版本号，确认是版本和commitID
+- Check version number, confirm version and commitID
 ```
 okchaind version --long
-
 name: okchain
 server_name: okchaind
 client_name: okchaincli
@@ -42,38 +43,37 @@ cosmos_sdk: v0.37.9
 tendermint: v0.32.10
 ```
 
-#### 2. 使用v0.10.10的okchaind导出当前genesis.json
-- 停掉当前节点
+#### 2. use okchaind v0.10.10 to export genesis.json
+- Stop current node
 ```
-# 结束进程
+# kill the process
 ```
-- 用官方指定的高度导出genesis.json
+- export genesis.json at officially assigned block hight
 ```
 ./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-注：--height=9460000 参数必须与官方保持一致。不同的高度会导致export.json不同
+Attention：--height=9460000 must correspond with official. Different height will cause different export.json
 
-- 使用sha256生成摘要，并比对官方的摘要
+- Use sha256 to generate abstract and compare it with the official abstract
 ```
 $shasum -a 256 export.json
 ```
-注：官方摘要是
+Notice：official abstract is 
 
 
-#### 3. 使用okchain v0.11.0分支代码，编译新的okchaind
+#### 3. Use okchain v0.11.0 code to compile new okchaind
 
-- 使用最新的okchain v0.11.0分支代码，编译新的okchaind
+- use latest okchain v0.11.0 code to compile new okchaind
 ```
 git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
 make GenesisHeight=9460000 install
 ```
-注：GenesisHeight=9460000 参数必须与官方保持一致。
+Attention：--height=9460000 must correspond with official.
 
-- 查看版本号，确认版本和commitID
+- Check version number, confirm version and commitID
 ```
 okchaind version --long
-
 name: okchain
 server_name: okchaind
 client_name: okchaincli
@@ -86,31 +86,24 @@ tendermint: v0.32.10
 ```
 
 
-#### 4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json
-- 用新的okchaind，执行migrate操作，更新genesis.json
+#### 4. use okchaind v0.11.0 to execute migrate, update genesis.json
+- use new okchaind to execute migrate and update genesis.json
 ```
 okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
 ```
 
-- 使用sha256生成摘要，并比对官方的摘要
+- Use sha256 to generate abstract and compare it with the official abstract
 ```
 $shasum -a 256 genesis.json
 ```
-注：官方摘要是
+Notice：official abstract is
 
 
-## 步骤二：重启节点
-### 1. 使用新的genesis.json重启服务
-- 删除旧数据（或备份）
+## Step 2：Restart node
+### 1. Use new genesis.json to restart
+- delete old data (or back up)
 ```
-okchaind unsafe-reset-all # 建议先备份，待新网络正常启动后再删除
+okchaind unsafe-reset-all # recommend to back up first, delete the old data after the new network restart successfully
 ```
-- 将genesis.json复制到/path/to/okchaind/config/目录下
-- 重启当前节点
-
-
-
-
-
-
-
+- copy genesis.json to /path/to/okchaind/config/
+- Restart current node
