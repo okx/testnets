@@ -20,7 +20,7 @@
 
 ### 方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)
 #### 1. 编译v0.10.10的okchaind
-- 切换okchain分支至v0.10.10，编译okchaind，如果
+- 切换okchain分支至v0.10.10，编译okchaind
 ```
 git clone https://github.com/okex/okchain.git -b v0.10.10
 cd okchain
@@ -57,7 +57,7 @@ tendermint: v0.32.10
 ```
 $shasum -a 256 export.json
 ```
-注：官方摘要是
+注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
 
 #### 3. 使用okchain v0.11.0分支代码，编译新的okchaind
@@ -96,7 +96,7 @@ okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesi
 ```
 $shasum -a 256 genesis.json
 ```
-注：官方摘要是
+注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
 
 ## 步骤二：重启节点

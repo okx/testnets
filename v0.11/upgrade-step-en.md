@@ -21,7 +21,7 @@ Notice: The official will upload the genesis file in 2020/8/26 7:00-10:00 UTC
 
 ### Method 2：Generate latest genesis.json through `okchaind migrate`(Recomended)
 #### 1. Compile okchaind v0.10.10
-- Switch okchain branch to v0.10.10, compile okchaind, if
+- Switch okchain branch to v0.10.10, compile okchaind
 ```
 git clone https://github.com/okex/okchain.git -b v0.10.10
 cd okchain
@@ -58,7 +58,7 @@ Attention：--height=9460000 must correspond with official. Different height wil
 ```
 $shasum -a 256 export.json
 ```
-Notice：official abstract is 
+Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
 
 #### 3. Use okchain v0.11.0 code to compile new okchaind
@@ -97,7 +97,7 @@ okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesi
 ```
 $shasum -a 256 genesis.json
 ```
-Notice：official abstract is
+Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
 
 ## Step 2：Restart node
