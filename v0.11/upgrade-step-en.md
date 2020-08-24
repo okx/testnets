@@ -17,7 +17,7 @@
 ## Step 1：Get the latest genesis.json file
 ### Method 1：Download genesis.json from the below URL
 Download URL：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
-
+Notice: The official will upload the genesis file in 2020/8/26 7:00-10:00 UTC
 
 ### Method 2：Generate latest genesis.json through `okchaind migrate`(Recomended)
 #### 1. Compile okchaind v0.10.10
@@ -31,6 +31,7 @@ make install
 - Check version number, confirm version and commitID
 ```
 okchaind version --long
+
 name: okchain
 server_name: okchaind
 client_name: okchaincli
@@ -47,7 +48,7 @@ tendermint: v0.32.10
 ```
 # kill the process
 ```
-- export genesis.json at officially assigned block hight
+- export genesis.json at officially assigned block hight 9460000
 ```
 ./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
@@ -73,6 +74,7 @@ Attention：--height=9460000 must correspond with official.
 - Check version number, confirm version and commitID
 ```
 okchaind version --long
+
 name: okchain
 server_name: okchaind
 client_name: okchaincli
