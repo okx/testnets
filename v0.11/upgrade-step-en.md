@@ -16,7 +16,7 @@
 
 ## Step 1：Get the latest genesis.json file
 ### Method 1：Download genesis.json from the below URL
-Download URL：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
+Download URL：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)  
 Notice: The official will upload the genesis file in 2020/8/26 7:00-10:00 UTC
 
 ### Method 2：Generate latest genesis.json through `okchaind migrate`(Recomended)
