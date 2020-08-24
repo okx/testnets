@@ -91,6 +91,7 @@ tendermint: v0.32.10
 ```
 okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
 ```
+注：本次的chain-id=okchain-testnet1
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```

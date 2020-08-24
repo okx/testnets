@@ -93,6 +93,8 @@ tendermint: v0.32.10
 ```
 okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
 ```
+Notice: chain-id=okchain-testnet1
+
 
 - Use sha256 to generate abstract and compare it with the official abstract
 ```
