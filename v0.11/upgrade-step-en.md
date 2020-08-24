@@ -12,7 +12,6 @@
 
 
 
-
 # 2 steps to update to v0.11.0
 
 ## Step 1：Get the latest genesis.json file
@@ -35,6 +34,7 @@ okchaind version --long
 name: okchain
 server_name: okchaind
 client_name: okchaincli
+version: v0.10.8
 commit: cdbfdc8c32292569227d0755f588ddcf45c4364b
 build_tags: netgo
 go: go version go1.13.12 linux/amd64
