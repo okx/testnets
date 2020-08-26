@@ -102,10 +102,17 @@ d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 
 
 ## Step 2：Restart node
-### 1. Use new genesis.json to restart
+### 1. use okchain v0.11.1 code，compile new okchaind
+[compile method](https://github.com/okex/testnets/blob/master/v0.11/upgrade-step-en.md#3-use-okchain-v0111-code-to-compile-new-okchaind)
+
+
+### 2. Use new genesis.json to restart
 - delete old data (or back up)
 ```
 okchaind unsafe-reset-all # recommend to back up first, delete the old data after the new network restart successfully
 ```
 - copy genesis.json to /path/to/okchaind/config/
 - Restart current node
+```
+okchaind start # use okchaind v0.11.1 to start
+```
