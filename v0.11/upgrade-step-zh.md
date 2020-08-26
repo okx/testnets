@@ -5,10 +5,11 @@
      * [方式2：通过`okchaind migrate`生成最新的genesis.json(推荐)](#方式2自己migrate出genesisjson推荐)
         * [1. 编译v0.10.10的okchaind](#1-编译v01010的okchaind)
         * [2. 使用v0.10.10的okchaind导出当前genesis.json](#2-使用v01010的okchaind导出当前genesisjson)
-        * [3. 使用okchain v0.11.0分支代码，编译新的okchaind](#3-使用okchain-v0110分支代码编译新的okchaind)
+        * [3. 使用okchain v0.11.1分支代码，编译新的okchaind](#3-使用okchain-v0110分支代码编译新的okchaind)
         * [4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json](#4-使用v0110的-okchaind-执行-migrate更新genesisjson)
   * [步骤二：重启节点](#步骤二重启节点)
-     * [1. 使用新的genesis.json重启服务](#1-使用新的genesisjson重启服务)
+     * [1. 使用okchain v0.11.1分支代码，编译新的okchaind](#1-使用okchain v0.11.1分支代码，编译新的okchaind)
+     * [2. 使用新的genesis.json重启服务](#2-使用新的genesisjson重启服务)
 
 
 # 升级至v0.11.1需要两步
