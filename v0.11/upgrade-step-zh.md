@@ -47,15 +47,16 @@ tendermint: v0.32.10
 ```
 # 结束进程
 ```
-- 用官方指定的高度9460000导出genesis.json
+- 用官方指定的高度9450000导出genesis.json
 ```
-./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9450000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-注：--height=9460000 参数必须与官方保持一致。不同的高度会导致export.json不同
+注：--height=9450000 参数必须与官方保持一致。不同的高度会导致export.json不同
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```
 $shasum -a 256 export.json
+821e69f0b64e06fc75e1fac804f837236a37ac6c1ba9902b8a74a30f275c1241
 ```
 注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
@@ -66,9 +67,9 @@ $shasum -a 256 export.json
 ```
 git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
-make GenesisHeight=9460000 install
+make GenesisHeight=9450000 install
 ```
-注：GenesisHeight=9460000 参数必须与官方保持一致。
+注：GenesisHeight=9450000 参数必须与官方保持一致。
 
 - 查看版本号，确认版本和commitID
 ```
@@ -96,6 +97,7 @@ okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesi
 - 使用sha256生成摘要，并比对官方的摘要
 ```
 $shasum -a 256 genesis.json
+d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 ```
 注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
