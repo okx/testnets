@@ -56,6 +56,7 @@ tendermint: v0.32.10
 - 使用sha256生成摘要，并比对官方的摘要
 ```
 $shasum -a 256 export.json
+821e69f0b64e06fc75e1fac804f837236a37ac6c1ba9902b8a74a30f275c1241
 ```
 注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
@@ -96,6 +97,7 @@ okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesi
 - 使用sha256生成摘要，并比对官方的摘要
 ```
 $shasum -a 256 genesis.json
+d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 ```
 注：官方摘要是（将在 2020/8/26 7:00-10:00 UTC 上传）
 
