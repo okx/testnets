@@ -91,7 +91,7 @@ tendermint: v0.32.10
 #### 4. use okchaind v0.11.0 to execute migrate, update genesis.json
 - use new okchaind to execute migrate and update genesis.json
 ```
-okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
+okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
 ```
 Notice: chain-id=okchain-testnet1
 
