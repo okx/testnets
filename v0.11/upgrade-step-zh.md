@@ -106,7 +106,9 @@ okchaind unsafe-reset-all # 建议先备份，待新网络正常启动后再删�
 ```
 - 将genesis.json复制到/path/to/okchaind/config/目录下
 - 重启当前节点
-
+```
+okchaind start # 使用v0.11.0的 okchaind
+```
 
 
 
