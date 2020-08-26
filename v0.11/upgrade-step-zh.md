@@ -99,7 +99,33 @@ d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 
 
 ## 步骤二：重启节点
-### 1. 使用新的genesis.json重启服务
+
+### 1. 使用okchain v0.11.0分支代码，编译新的okchaind
+
+- 使用最新的okchain v0.11.0分支代码，编译新的okchaind
+```
+git clone https://github.com/okex/okchain.git -b v0.11.0
+cd okchain
+make GenesisHeight=9450000 install
+```
+注：GenesisHeight=9450000 参数必须与官方保持一致。
+
+- 查看版本号，确认版本和commitID
+```
+okchaind version --long
+
+name: okchain
+server_name: okchaind
+client_name: okchaincli
+version: v0.11.0
+commit: 808fa9b55530affc7a3a1a1bb8384c58eb6d3512
+build_tags: netgo
+go: go version go1.14.2 darwin/amd64
+cosmos_sdk: v0.37.9
+tendermint: v0.32.10
+```
+
+### 2. 使用新的genesis.json重启服务
 - 删除旧数据（或备份）
 ```
 okchaind unsafe-reset-all # 建议先备份，待新网络正常启动后再删除
