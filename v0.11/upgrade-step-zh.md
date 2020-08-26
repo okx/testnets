@@ -75,8 +75,8 @@ okchaind version --long
 name: okchain
 server_name: okchaind
 client_name: okchaincli
-version: v0.11.0
-commit: 808fa9b55530affc7a3a1a1bb8384c58eb6d3512
+version: v0.11.1
+commit: 64be77515eb35af1db5a4365990cb22d201230fb
 build_tags: netgo
 go: go version go1.14.2 darwin/amd64
 cosmos_sdk: v0.37.9
