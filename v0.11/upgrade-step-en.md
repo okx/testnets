@@ -64,7 +64,7 @@ $shasum -a 256 export.json
 
 - use latest okchain v0.11.1 code to compile new okchaind
 ```
-git clone https://github.com/okex/okchain.git -b v0.11.0
+git clone https://github.com/okex/okchain.git -b v0.11.1
 cd okchain
 make GenesisHeight=9450000 install
 ```
