@@ -58,6 +58,7 @@ Attention：--height=9450000 must correspond with official. Different height wil
 - Use sha256 to generate abstract and compare it with the official abstract
 ```
 $shasum -a 256 export.json
+821e69f0b64e06fc75e1fac804f837236a37ac6c1ba9902b8a74a30f275c1241
 ```
 Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
@@ -99,6 +100,7 @@ Notice: chain-id=okchain-testnet1
 - Use sha256 to generate abstract and compare it with the official abstract
 ```
 $shasum -a 256 genesis.json
+d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 ```
 Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
