@@ -66,9 +66,9 @@ $shasum -a 256 export.json
 ```
 git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
-make GenesisHeight=9460000 install
+make GenesisHeight=9450000 install
 ```
-注：GenesisHeight=9460000 参数必须与官方保持一致。
+注：GenesisHeight=9450000 参数必须与官方保持一致。
 
 - 查看版本号，确认版本和commitID
 ```
