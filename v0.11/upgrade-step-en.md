@@ -49,11 +49,11 @@ tendermint: v0.32.10
 ```
 # kill the process
 ```
-- export genesis.json at officially assigned block hight 9460000
+- export genesis.json at officially assigned block hight 9450000
 ```
-./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9450000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-Attention：--height=9460000 must correspond with official. Different height will cause different export.json
+Attention：--height=9450000 must correspond with official. Different height will cause different export.json
 
 - Use sha256 to generate abstract and compare it with the official abstract
 ```
@@ -68,9 +68,9 @@ Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 ```
 git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
-make GenesisHeight=9460000 install
+make GenesisHeight=9450000 install
 ```
-Attention：--height=9460000 must correspond with official.
+Attention：--height=9450000 must correspond with official.
 
 - Check version number, confirm version and commitID
 ```
