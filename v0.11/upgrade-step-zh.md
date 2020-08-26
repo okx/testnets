@@ -90,7 +90,7 @@ tendermint: v0.32.10
 #### 4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json
 - 用新的okchaind，执行migrate操作，更新genesis.json
 ```
-okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-17T17:00:00Z > genesis.json
+okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
 ```
 注：本次的chain-id=okchain-testnet1
 
