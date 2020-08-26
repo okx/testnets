@@ -102,7 +102,7 @@ d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 ## 步骤二：重启节点
 
 ### 1. 使用okchain v0.11.1分支代码，编译新的okchaind
-[编译方法](https://github.com/okex/testnets/blob/master/v0.11/upgrade-step-zh.md#3-%E4%BD%BF%E7%94%A8okchain-v0110%E5%88%86%E6%94%AF%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91%E6%96%B0%E7%9A%84okchaind)
+[编译方法](https://github.com/okex/testnets/blob/master/v0.11/upgrade-step-zh.md#3-%E4%BD%BF%E7%94%A8okchain-v0111%E5%88%86%E6%94%AF%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91%E6%96%B0%E7%9A%84okchaind)
 
 
 ### 2. 使用新的genesis.json重启服务
