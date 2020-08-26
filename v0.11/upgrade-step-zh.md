@@ -47,11 +47,11 @@ tendermint: v0.32.10
 ```
 # 结束进程
 ```
-- 用官方指定的高度9460000导出genesis.json
+- 用官方指定的高度9450000导出genesis.json
 ```
-./okchaind export --for-zero-height --height=9460000 --home /path/to/okchaind --log_level="*:error" > export.json
+./okchaind export --for-zero-height --height=9450000 --home /path/to/okchaind --log_level="*:error" > export.json
 ```
-注：--height=9460000 参数必须与官方保持一致。不同的高度会导致export.json不同
+注：--height=9450000 参数必须与官方保持一致。不同的高度会导致export.json不同
 
 - 使用sha256生成摘要，并比对官方的摘要
 ```
