@@ -18,8 +18,6 @@
 ### Method 1：Download genesis.json from the below URL
 Download URL：[genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)  
 
-Notice: The official will upload the genesis file in 2020/8/26 7:00-10:00 UTC
-
 ### Method 2：Generate latest genesis.json through `okchaind migrate`(Recomended)
 #### 1. Compile okchaind v0.10.10
 - Switch okchain branch to v0.10.10, compile okchaind
@@ -60,7 +58,6 @@ Attention：--height=9450000 must correspond with official. Different height wil
 $shasum -a 256 export.json
 821e69f0b64e06fc75e1fac804f837236a37ac6c1ba9902b8a74a30f275c1241
 ```
-Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
 
 #### 3. Use okchain v0.11.0 code to compile new okchaind
@@ -102,7 +99,6 @@ Notice: chain-id=okchain-testnet1
 $shasum -a 256 genesis.json
 d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
 ```
-Notice：official abstract is (will upload in 2020/8/26 7:00-10:00 UTC)
 
 
 ## Step 2：Restart node
