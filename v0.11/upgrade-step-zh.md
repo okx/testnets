@@ -59,8 +59,49 @@ $shasum -a 256 export.json
 ```
 
 
-#### 3. 使用okchain v0.11.1分支代码，编译新的okchaind
+#### 3. 使用okchain v0.11.0分支代码，编译新的okchaind
 
+- 使用最新的okchain v0.11.0分支代码，编译新的okchaind
+```
+git clone https://github.com/okex/okchain.git -b v0.11.0
+cd okchain
+make GenesisHeight=9450000 install
+```
+注：GenesisHeight=9450000 参数必须与官方保持一致。
+
+- 查看版本号，确认版本和commitID
+```
+okchaind version --long
+
+name: okchain
+server_name: okchaind
+client_name: okchaincli
+version: v0.11.0
+commit: 808fa9b55530affc7a3a1a1bb8384c58eb6d3512
+build_tags: netgo
+go: go version go1.14.2 darwin/amd64
+cosmos_sdk: v0.37.9
+tendermint: v0.32.10
+```
+
+
+#### 4. 使用v0.11.0的 okchaind 执行 migrate，更新genesis.json
+- 用新的okchaind，执行migrate操作，更新genesis.json
+```
+okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
+```
+注：本次的chain-id=okchain-testnet1
+
+- 使用sha256生成摘要，并比对官方的摘要
+```
+$shasum -a 256 genesis.json
+d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
+```
+
+
+## 步骤二：重启节点
+
+### 1. 使用okchain v0.11.1分支代码，编译新的okchaind
 - 使用最新的okchain v0.11.1分支代码，编译新的okchaind
 ```
 git clone https://github.com/okex/okchain.git -b v0.11.1
@@ -83,26 +124,6 @@ go: go version go1.14.2 darwin/amd64
 cosmos_sdk: v0.37.9
 tendermint: v0.32.10
 ```
-
-
-#### 4. 使用v0.11.1的 okchaind 执行 migrate，更新genesis.json
-- 用新的okchaind，执行migrate操作，更新genesis.json
-```
-okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
-```
-注：本次的chain-id=okchain-testnet1
-
-- 使用sha256生成摘要，并比对官方的摘要
-```
-$shasum -a 256 genesis.json
-91d7a95fe3e564c7d5fef184f699a0555c8a3dd651ac9fcfdf4f84fe11d85908
-```
-
-
-## 步骤二：重启节点
-
-### 1. 使用okchain v0.11.1分支代码，编译新的okchaind
-[编译方法](https://github.com/okex/testnets/blob/master/v0.11/upgrade-step-zh.md#3-%E4%BD%BF%E7%94%A8okchain-v0111%E5%88%86%E6%94%AF%E4%BB%A3%E7%A0%81%E7%BC%96%E8%AF%91%E6%96%B0%E7%9A%84okchaind)
 
 
 ### 2. 使用新的genesis.json重启服务

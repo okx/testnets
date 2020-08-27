@@ -60,11 +60,52 @@ $shasum -a 256 export.json
 ```
 
 
-#### 3. Use okchain v0.11.1 code to compile new okchaind
+#### 3. Use okchain v0.11.0 code to compile new okchaind
 
+- use latest okchain v0.11.0 code to compile new okchaind
+```
+git clone https://github.com/okex/okchain.git -b v0.11.0
+cd okchain
+make GenesisHeight=9450000 install
+```
+Attention：--height=9450000 must correspond with official.
+
+- Check version number, confirm version and commitID
+```
+okchaind version --long
+
+name: okchain
+server_name: okchaind
+client_name: okchaincli
+version: v0.11.0
+commit: 808fa9b55530affc7a3a1a1bb8384c58eb6d3512
+build_tags: netgo
+go: go version go1.14.2 darwin/amd64
+cosmos_sdk: v0.37.9
+tendermint: v0.32.10
+```
+
+
+#### 4. use okchaind v0.11.0 to execute migrate, update genesis.json
+- use new okchaind to execute migrate and update genesis.json
+```
+okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
+```
+Notice: chain-id=okchain-testnet1
+
+
+- Use sha256 to generate abstract and compare it with the official abstract
+```
+$shasum -a 256 genesis.json
+d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
+```
+
+
+## Step 2：Restart node
+### 1. use okchain v0.11.1 code，compile new okchaind
 - use latest okchain v0.11.1 code to compile new okchaind
 ```
-git clone https://github.com/okex/okchain.git -b v0.11.1
+git clone https://github.com/okex/okchain.git -b v0.11.0
 cd okchain
 make GenesisHeight=9450000 install
 ```
@@ -84,26 +125,6 @@ go: go version go1.14.2 darwin/amd64
 cosmos_sdk: v0.37.9
 tendermint: v0.32.10
 ```
-
-
-#### 4. use okchaind v0.11.1 to execute migrate, update genesis.json
-- use new okchaind to execute migrate and update genesis.json
-```
-okchaind migrate v0.11 /path/to/export.json --chain-id=okchain-testnet1 --genesis-time=2020-08-26T04:55:00Z > genesis.json
-```
-Notice: chain-id=okchain-testnet1
-
-
-- Use sha256 to generate abstract and compare it with the official abstract
-```
-$shasum -a 256 genesis.json
-91d7a95fe3e564c7d5fef184f699a0555c8a3dd651ac9fcfdf4f84fe11d85908
-```
-
-
-## Step 2：Restart node
-### 1. use okchain v0.11.1 code，compile new okchaind
-[compile method](https://github.com/okex/testnets/blob/master/v0.11/upgrade-step-en.md#3-use-okchain-v0111-code-to-compile-new-okchaind)
 
 
 ### 2. Use new genesis.json to restart
