@@ -97,7 +97,7 @@ Notice: chain-id=okchain-testnet1
 - Use sha256 to generate abstract and compare it with the official abstract
 ```
 $shasum -a 256 genesis.json
-d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97
+91d7a95fe3e564c7d5fef184f699a0555c8a3dd651ac9fcfdf4f84fe11d85908
 ```
 
 
