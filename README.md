@@ -1,7 +1,7 @@
 # OKChain Testnets
 
 This repo collects the genesis and configuration files for the various OKChain
-testnets. It exists so the [OKChain repo](https://github.com/okex/okchain)
+testnets. It exists so the [OKExChain repo](https://github.com/okex/okexchain)
 does not get bogged down with large genesis files and status updates.
 
 ## Getting Started
@@ -10,7 +10,7 @@ To get started with the latest testnet, see the
 [docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okchain-testnet.html).
 
 ## Testnet Status
-Source Code: [latest released version](https://github.com/okex/okchain/releases)
+Source Code: [latest released version](https://github.com/okex/okexchain/releases)
 
 ⚠️ Latest testnet: [okchain-v0.12](./v0.12) ⚠️
 * *Sep 17, 2020 10:19 UTC* - okchain-v0.12
