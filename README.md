@@ -7,19 +7,19 @@ does not get bogged down with large genesis files and status updates.
 ## Getting Started
 
 To get started with the latest testnet, see the
-[docs](https://okchain-docs.readthedocs.io/en/latest/getting-start/join-okchain-testnet.html).
+[docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okchain-testnet.html).
 
 ## Testnet Status
 Source Code: [latest released version](https://github.com/okex/okchain/releases)
 
-⚠️ Latest testnet: [okchain-v0.11](./v0.11) ⚠️
-* *Aug 26, 2020 10:19 UTC* - okchain-v0.11
+⚠️ Latest testnet: [okchain-v0.12](./v0.12) ⚠️
+* *Sep 17, 2020 10:19 UTC* - okchain-v0.12
 
-Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.11/genesis.json)
+Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.12/genesis.json)
 
 ```bash
 $ shasum -a 256 genesis.json
-d80e2a234c01a5f4690f9f76341f22db7d913181c28a51a2fb02082fd90b9a97  genesis.json
+d384605ea65e1bc1d3cdd01d9099f4a175fa1a42042d92b267025edfd29399e8  genesis.json
 ```
 
 Seed nodes:
