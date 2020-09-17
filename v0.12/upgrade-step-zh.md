@@ -6,7 +6,7 @@
 
 尊敬的OKExChain社区用户：
 
-OKChain已经更名为OKExChain。我们将在2020/9/17 10:00 UTC对测试网进行升级 ，此次升级chain-id变为okexchian-testnet1，原先okchain-testnet1的数据将全部清掉
+OKChain已经更名为OKExChain。我们将在2020/9/17 10:00 UTC对测试网进行升级 ，此次升级chain-id变为okexchain-testnet1，原先okchain-testnet1的数据将全部清掉
 
 ## OKExChain测试网v0.12.0升级内容
 1. 本次升级其核心功能是支持SWAP模块。基于OKExChain SWAP，用户可以进行代币互换、创建流动性、添加流动性和减少流动性等操作。
