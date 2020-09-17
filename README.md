@@ -12,8 +12,8 @@ To get started with the latest testnet, see the
 ## Testnet Status
 Source Code: [latest released version](https://github.com/okex/okexchain/tree/v0.12.0-testnet1)
 
-⚠️ Latest testnet: [okchain-v0.12](./v0.12) ⚠️
-* *Sep 17, 2020 10:19 UTC* - okchain-v0.12
+⚠️ Latest testnet: [okexchain-v0.12](./v0.12) ⚠️
+* *Sep 17, 2020 10:19 UTC* - okexchain-v0.12
 
 Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.12/genesis.json)
 
