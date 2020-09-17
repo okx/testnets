@@ -7,7 +7,7 @@ does not get bogged down with large genesis files and status updates.
 ## Getting Started
 
 To get started with the latest testnet, see the
-[docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okchain-testnet.html).
+[docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html).
 
 ## Testnet Status
 Source Code: [latest released version](https://github.com/okex/okexchain/releases)
