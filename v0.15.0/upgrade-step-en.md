@@ -25,4 +25,4 @@ Please refer to OKExChain's official channels, listed below, for updated and acc
 If you have any doubts about the steps of the network upgrade and the reliability of the information, please wait for instructions from OKExChain's official channels before taking any actions. Please do not provide your 12-digits passwords to any administrator, website or unofficial software.
 
 OKExChain  
-2020/12/01
+2020/12/04
