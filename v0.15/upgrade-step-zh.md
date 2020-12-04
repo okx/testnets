@@ -14,7 +14,7 @@
 3. okexchain v0.15.0支持升级到cosmos sdk v0.39.2
 
 ## 作为OKExChain验证人，我需要做些什么？
-本次升级为清数据升级。请于2020/12/04 10:00 UTC前停掉当前测试网运行节点，按照教程重加入新的测试网，我们将往Validator地址发放等量的新测试币。
+本次升级为清数据升级。请于2020/12/04 10:00 UTC前停掉当前测试网运行节点，并清除掉原有数据。按照教程重加入新的测试网，我们将往Validator地址发放等量的新测试币。
 创建测试网教程请参考下面链接：
 https://okexchain-docs.readthedocs.io/en/latest/getting-start/install-okexchain.html
 
