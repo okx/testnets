@@ -13,7 +13,7 @@ To get started with the latest testnet, see the
 Source Code: [latest released version](https://github.com/okex/okexchain/tree/v0.15.0-testnet)
 
 ⚠️ Latest testnet: [okexchain-v0.15](./v0.15) ⚠️
-* *Sep 17, 2020 10:19 UTC* - okexchain-v0.15
+* *Dec 4, 2020 11:19 UTC* - okexchain-v0.15
 
 Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.15/genesis.json)
 
