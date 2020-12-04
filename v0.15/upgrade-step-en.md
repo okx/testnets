@@ -11,7 +11,7 @@ OKExChain is scheduled to upgrade its testnet to V0.15.0 at 2020/12/04 11:00 UTC
 3. OKExChain v0.15.0 upgraded to cosmos sdk v0.39.2
 
 ## What are the duties of an OKExChain validator?
-Please stop the current testnet node before 2020/12/04 10:00 UTC and restart a node to join the new testnet following the below instructions. We will send the same amount of new test tokens to your Validator address.   
+Please stop the current testnet node before 2020/12/04 10:00 UTC and restart a node and erase the old data to join the new testnet following the below instructions. We will send the same amount of new test tokens to your Validator address.   
 https://okexchain-docs.readthedocs.io/en/latest/getting-start/install-okexchain.html
 
 
