@@ -19,7 +19,7 @@ Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/mast
 
 ```bash
 $ shasum -a 256 genesis.json
-59044c8a2fb7bfb97ad8fe5a6f5286349d7a9a1724b17e27020ae84cf22bee8d  genesis.json
+844fe86ae829d53ca7028b892086530f77169b5f83bcd87827389da8d8dfbe89  genesis.json
 ```
 
 Seed nodes:
