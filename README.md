@@ -12,7 +12,7 @@ To get started with the latest testnet, see the
 ## Testnet Status
 Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.6.1)
 
-⚠️ Latest testnet: [okexchain v0.16.6](https://github.com/okex/okexchain/releases/tag/v0.16.6.1) ⚠️
+⚠️ Latest testnet: [okexchain v0.16.6.1](https://github.com/okex/okexchain/releases/tag/v0.16.6.1) ⚠️
 * *Feb 19, 2021 16:19 UTC* - okexchain-v0.16.6.1
 
 Build v0.16.6.1 okexchaind 
