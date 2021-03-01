@@ -15,7 +15,7 @@ Source Code: [latest released version](https://github.com/okex/okexchain/release
 ⚠️ Latest testnet: [okexchain v0.16.6.3](https://github.com/okex/okexchain/releases/tag/v0.16.6.3) ⚠️
 * *Mar 1, 2021 11:10 UTC* - okexchain-v0.16.6.3
 
-Build v0.16.6.3 okexchaind 
+Build latest released okexchaind 
 ```
 make GenesisHeight=914809 install
 ```
