@@ -10,12 +10,12 @@ To get started with the latest testnet, see the
 [docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html).
 
 ## Testnet Status
-Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.6.2)
+Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.6.3)
 
-⚠️ Latest testnet: [okexchain v0.16.6.2](https://github.com/okex/okexchain/releases/tag/v0.16.6.2) ⚠️
-* *Feb 19, 2021 16:19 UTC* - okexchain-v0.16.6.2
+⚠️ Latest testnet: [okexchain v0.16.6.3](https://github.com/okex/okexchain/releases/tag/v0.16.6.3) ⚠️
+* *Feb 19, 2021 16:19 UTC* - okexchain-v0.16.6.3
 
-Build v0.16.6.2 okexchaind 
+Build v0.16.6.3 okexchaind 
 ```
 make GenesisHeight=914809 install
 ```
