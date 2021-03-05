@@ -11,10 +11,7 @@ To get started with the latest testnet, see the
 
 ## Testnet Status
 
-Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.8)
-
-⚠️ Latest testnet: [okexchain v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8) ⚠️
-
+Source Code: [latest released version v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
 Build latest released okexchaind 
 ```
