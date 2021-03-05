@@ -10,22 +10,19 @@ To get started with the latest testnet, see the
 [docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html).
 
 ## Testnet Status
-Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.6.3)
+Source Code: [latest released version](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
-⚠️ Latest testnet: [okexchain v0.16.6.3](https://github.com/okex/okexchain/releases/tag/v0.16.6.3) ⚠️
-* *Mar 1, 2021 11:10 UTC* - okexchain-v0.16.6.3
+⚠️ Latest testnet: [okexchain v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8) ⚠️
+
 
 Build latest released okexchaind 
 ```
-make GenesisHeight=914809 install
+make GenesisHeight=1121818 install
 ```
 
-Download the [genesis file](https://raw.githubusercontent.com/okex/testnets/master/v0.16.6/genesis.json)
+Download the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz)
 
-```bash
-$ shasum -a 256 genesis.json
-844fe86ae829d53ca7028b892086530f77169b5f83bcd87827389da8d8dfbe89  genesis.json
-```
+
 
 Seed nodes:
 ```
