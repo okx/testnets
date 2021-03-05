@@ -37,7 +37,7 @@ Download the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/ok
 Unpack the snapshot data to okexchaind directory
 ```
 mv ~/.okexchaind/data ~/.okexchaind/data-bak
-# rm -rf ~/.okexchaind/data
 cd ~/.okexchaind 
+wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 ```
