@@ -46,7 +46,7 @@ docker logs --tail 100 -f okexchain-testnet-fullnode
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
 ___
-### Start testnet with okexchaind binary
+### Start testnet with the okexchaind binary
 
 - Source Code: [latest released version v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
