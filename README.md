@@ -22,7 +22,7 @@ tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 ```
 
 ## Start with the snapshot
-2 ways to startup an okexchaind full node: 
+2 ways to startup an okexchain full node: 
 - start with a docker image
 - start with the okexchaind binary
 
