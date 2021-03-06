@@ -9,7 +9,7 @@ does not get bogged down with large genesis files and status updates.
 [Getting Started Docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html)
 
 
-## Download the latest testnet blockchain data snapshot
+## Download the latest testnet data snapshot
 
 Download the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz)
 
