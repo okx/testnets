@@ -61,8 +61,8 @@ tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 
 #### Start your node
 ```shell script
-export OKEXCHAIN_SEEDS="--p2p.seeds b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
-okexchaind start --chain-id okexchain-65 $OKEXCHAIN_SEEDS
+export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
+okexchaind start --chain-id okexchain-65 --p2p.seeds $OKEXCHAIN_SEEDS
 ```
 
 - please checkout the log to confirm if the system is synchronizing the past blocks
