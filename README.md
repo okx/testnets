@@ -59,8 +59,9 @@ mv ~/.okexchaind/data ~/.okexchaind/data-bak
 cd ~/.okexchaind 
 wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
+okexchaind start --chain-id okexchain-65 
 ```
-
+- please checkout the log to confirm if the system is synchronizing the past blocks
 
 
 
