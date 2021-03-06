@@ -1,6 +1,6 @@
 # OKExChain Testnets
 
-This repo collects the genesis and configuration files for the various OKChain
+This repo collects the genesis, snapshot data and configuration files for the various OKChain
 testnets. It exists so the [OKExChain repo](https://github.com/okex/okexchain)
 does not get bogged down with large genesis files and status updates.
 
@@ -39,7 +39,7 @@ wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot
 tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 ```
 
-## Start with docker
+## Start testnet with a docker image
 ### 1. download the docker image
 ```
 docker pull okexchain/fullnode-testnet:latest
