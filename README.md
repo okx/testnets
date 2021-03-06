@@ -8,7 +8,7 @@ does not get bogged down with large genesis files and status updates.
 
 [Getting Started Docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html)
 
-## Create okexchain node (if your have not in your computer)
+## Create okexchain node (if you don't have one yet, otherwise you can skip this step)
 ```shell script
 cd {your_dir}
 git clone https://github.com/okex/okexchain.git
