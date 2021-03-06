@@ -38,3 +38,23 @@ cd ~/.okexchaind
 wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 ```
+
+## Start with docker
+### 1. download the docker image
+```
+docker pull okexchain/fullnode-testnet:latest
+```
+
+### 2. run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
+```
+docker run -d --name okexchain-testnet-fullnode -v ~/.okexchaind/data:/root/.okexchaind/data/ -p 8545:8545 okexchain/fullnode-testnet:latest
+```
+
+### 3. view the running log
+```
+docker logs --tail 100 -f okexchain-testnet-fullnode
+```
+
+
+> You can stop the docker container with command: `docker stop okexchain-testnet-fullnode`, and restart the docker container with command: `docker start okexchain-testnet-fullnode`. 
+When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
