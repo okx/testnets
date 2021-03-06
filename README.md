@@ -48,14 +48,14 @@ ___
 ### 2. Start testnet with the okexchaind binary
 - Source Code: [latest released version v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
+- Build latest released okexchaind 
+```
+make GenesisHeight=1121818 install
+```
+
 #### Create okexchain node (if you don't have one yet, otherwise you can skip this step)
 ```shell script
-cd <your_dir>
-git clone https://github.com/okex/okexchain.git
-cd okexchain
-git checkout v0.16.8
-make GenesisHeight=1121818 install
-okexchaind init <your_custom_moniker> --chain-id okexchain-65 --home <your_home_dir> # --home default is ~ (home directory)
+okexchaind init your_custom_moniker --chain-id okexchain-65 --home ~/.okexchaind
 ````
 
 #### Start your node
