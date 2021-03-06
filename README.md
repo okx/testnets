@@ -6,8 +6,7 @@ does not get bogged down with large genesis files and status updates.
 
 ## Getting Started
 
-To get started with the latest testnet, see the
-[docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html).
+[Getting Started Docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html)
 
 
 ## Download the snapshot
@@ -23,19 +22,22 @@ tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
 ```
 
 ## Start with the snapshot
+2 ways to startup an okexchaind full node: 
+- start with a docker image
+- start with the okexchaind binary
 
 ### Start testnet with a docker image
-#### 1. download the docker image
+- download the docker image
 ```
 docker pull okexchain/fullnode-testnet:latest
 ```
 
-#### 2. run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
+- run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
 ```
 docker run -d --name okexchain-testnet-fullnode -v ~/.okexchaind/data:/root/.okexchaind/data/ -p 8545:8545 okexchain/fullnode-testnet:latest
 ```
 
-#### 3. view the running log
+- view the running log
 ```
 docker logs --tail 100 -f okexchain-testnet-fullnode
 ```
