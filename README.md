@@ -43,17 +43,17 @@ docker logs --tail 100 -f okexchain-testnet-fullnode
 > You can stop the docker container with command: `docker stop okexchain-testnet-fullnode`, and restart the docker container with command: `docker start okexchain-testnet-fullnode`. 
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
+___
 ### Start testnet with okexchaind binary
 
 - Source Code: [latest released version v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
-Build latest released okexchaind 
+- Build latest released okexchaind 
 ```
 make GenesisHeight=1121818 install
 ```
-#### Seed
 
-Seed nodes:
+- Seed
 ```
 b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656
 d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656
