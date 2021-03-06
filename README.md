@@ -43,10 +43,8 @@ git clone https://github.com/okex/okexchain.git
 cd okexchain
 git checkout v0.16.8
 make GenesisHeight=1121818 install
-okexchaind init <your_custom_moniker> --chain-id okexchain-65 --home <your_home_dir>
-vi ~/.okexchaind/config/config.toml
-# 添加seeds地址
-seeds = "b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
+okexchaind init <your_custom_moniker> --chain-id okexchain-65 --home <your_home_dir> # --home default is ~ (home directory)
+export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
 ````
 
 #### Download the latest testnet data snapshot
