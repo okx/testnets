@@ -8,3 +8,5 @@
 
 # Dependency directories (remove the comment below to include it)
 .idea
+
+.DS_Store
