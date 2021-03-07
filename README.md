@@ -1,4 +1,4 @@
-# OKExChain Testnets
+# OKExChain Testnet
 
 This repo collects the genesis, snapshot data and configuration files for the various OKChain
 testnets. It exists so the [OKExChain repo](https://github.com/okex/okexchain)
