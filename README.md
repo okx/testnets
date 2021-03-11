@@ -57,7 +57,7 @@ When the docker container gets to the latest block, local RPC can be used：`htt
 ___
 ### 2. Start testnet with the okexchaind binary
 
-- Build okexchaind by [the latest released version v0.16.8.2](https://github.com/okex/okexchain/releases/tag/v0.16.8.2)
+- Build okexchaind by [the latest released version v0.16.8.3](https://github.com/okex/okexchain/releases/tag/v0.16.8.3)
 ```
 make GenesisHeight=1121818 install
 ```
