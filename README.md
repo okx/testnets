@@ -10,7 +10,7 @@ does not get bogged down with large genesis files and status updates.
 
 ## Download the latest testnet data snapshot
 
-- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210310-height_1245356.tar.gz) to okexchaind directory
+- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210314-height_1337598.tar.gz) to okexchaind directory
 ```
 mv ~/.okexchaind/data ~/.okexchaind/data-bak
 cd ~/.okexchaind 
