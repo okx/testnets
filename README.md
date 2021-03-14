@@ -17,7 +17,7 @@ does not get bogged down with large genesis files and status updates.
 mv ~/.okexchaind/data ~/.okexchaind/data-bak
 cd ~/.okexchaind 
 wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210314-height_1337598.tar.gz
-tar -zxvf okexchain-v0.16.8-testnet-20210314-height_1337598.tar.gz
+tar -zxvf okexchain-v0.16.8-testnet-*.tar.gz
 ```
 
 - Check the snapshot by `ls -l ~/.okexchaind/data`
