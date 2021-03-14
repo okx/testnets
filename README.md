@@ -1,4 +1,4 @@
-# OKExChain Testnets
+# OKExChain Testnet
 
 This repo collects the genesis, snapshot data and configuration files for the various OKChain
 testnets. It exists so the [OKExChain repo](https://github.com/okex/okexchain)
@@ -10,14 +10,24 @@ does not get bogged down with large genesis files and status updates.
 
 ## Download the latest testnet data snapshot
 
-Download the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz)
-
-Unpack the snapshot data to okexchaind directory
+- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210310-height_1245356.tar.gz) to okexchaind directory
 ```
 mv ~/.okexchaind/data ~/.okexchaind/data-bak
 cd ~/.okexchaind 
-wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
-tar -zxvf okexchain-v0.16.8-testnet-20210305-height_1121961.tar.gz
+wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/okexchain-v0.16.8-testnet-20210310-height_1245356.tar.gz
+tar -zxvf okexchain-v0.16.8-testnet-20210310-height_1245356.tar.gz
+```
+
+- Check the snapshot by `ls -l ~/.okexchaind/data`
+```
+total 8
+drwxr-xr-x  1026 oak  staff  32832 Mar  7 09:20 application.db
+drwxr-xr-x    10 oak  staff    320 Mar  7 09:19 blockstore.db
+drwx------     3 oak  staff     96 Mar  5 18:43 cs.wal
+drwxr-xr-x     8 oak  staff    256 Mar  7 09:19 evidence.db
+-rw-------     1 oak  staff     48 Mar  7 09:17 priv_validator_state.json
+drwxr-xr-x    12 oak  staff    384 Mar  7 09:20 state.db
+drwxr-xr-x     9 oak  staff    288 Mar  7 09:19 tx_index.db
 ```
 
 ## Start with the snapshot
@@ -46,25 +56,22 @@ When the docker container gets to the latest block, local RPC can be used：`htt
 
 ___
 ### 2. Start testnet with the okexchaind binary
-- Source Code: [latest released version v0.16.8](https://github.com/okex/okexchain/releases/tag/v0.16.8)
 
-#### Create okexchain node (if you don't have one yet, otherwise you can skip this step)
-```shell script
-cd <your_dir>
-git clone https://github.com/okex/okexchain.git
-cd okexchain
-git checkout v0.16.8
+- Build okexchaind by [the latest released version v0.16.8.3](https://github.com/okex/okexchain/releases/tag/v0.16.8.3)
+```
 make GenesisHeight=1121818 install
-okexchaind init <your_custom_moniker> --chain-id okexchain-65 --home <your_home_dir> # --home default is ~ (home directory)
-````
-
-#### Start your node
-```shell script
-export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
-okexchaind start --chain-id okexchain-65 --p2p.seeds $OKEXCHAIN_SEEDS
 ```
 
-- please checkout the log to confirm if the system is synchronizing the past blocks
+- Initialize okexchain node configurations (skip this step if you did it before)
+```shell script
+okexchaind init your_custom_moniker --chain-id okexchain-65 --home ~/.okexchaind
+````
+
+- Start okexchaind
+```shell script
+export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
+okexchaind start --chain-id okexchain-65 --home ~/.okexchaind --p2p.seeds $OKEXCHAIN_SEEDS
+```
 
 
 
