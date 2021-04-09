@@ -8,7 +8,7 @@
 
 ## OKExChain测试网V0.17.0升级内容
 1. 原来测试网地址前缀是okexchain，新测试网更改为ex。
-2. 进行了一些优化和修复了一些bug。详情见：https://github.com/okex/okexchain/releases/tag/V0.17.0
+2. 进行了一些优化和修复了一些bug。详情见：https://github.com/okex/okexchain/releases/tag/v0.17.0
 
 
 ## 作为OKExChain验证人，我需要做些什么？
