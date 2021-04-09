@@ -8,7 +8,7 @@
 
 ## OKExChain测试网V0.17.0升级内容
 1. 原来测试网地址前缀是okexchain，新测试网更改为ex。
-2. 进行了一些优化和修复了一些bug。详情见https://github.com/okex/okexchain/releases/tag/V0.17.0
+2. 进行了一些优化和修复了一些bug。详情见：https://github.com/okex/okexchain/releases/tag/V0.17.0
 
 
 ## 作为OKExChain验证人，我需要做些什么？
@@ -25,12 +25,12 @@ https://github.com/okex/okexchain-go-sdk/releases
 okexchain-java-sdk更新到v0.17.0：  
 https://github.com/okex/okexchain-java-sdk/releases
 
-okexchain-java-sdk更新到v0.17.0：  
+okexchain-javascript-sdk更新到v0.17.0：  
 https://github.com/okex/okexchain-javascript-sdk/releases
 
 ## 对测试网用户有什么影响
-因测试网地址前缀更改，由原来的地址变成全新的ex开头地址。私钥不变，无需担心资产丢失。  
-对于dex网页钱包和三方钱包，在未更新适配新地址前，测试网暂无法使用转账，swap和dex等功能，但不影响通过metamask调用智能合约。
+- 因测试网地址前缀更改，由原来的地址变成全新的ex开头地址。私钥不变，无需担心资产丢失。  
+- 对于dex网页钱包和三方钱包，在未更新适配新地址前，测试网暂无法使用转账，swap和dex等功能，但不影响通过metamask调用智能合约。
 
 
 
