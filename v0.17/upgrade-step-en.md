@@ -29,7 +29,7 @@ https://github.com/okex/okexchain-javascript-sdk/releases
 
 
 ## What's the influences to testnet users?
-1. Because prefix of testnet address changed, the previous address will be changed to a totally new address with ex prefix.
+1. Because prefix of testnet address changed, the previous testnet address will be changed to a totally new address with ex prefix.
 The private key remains unchanged, so no worries about asset loss.
 
 2. Before dex web wallet and third party wallets upgrade to adopt the new address with ex prefix, users can not use testnet functions like transfer, swap and dex. But you can still use metamask to invoke smart contract.
