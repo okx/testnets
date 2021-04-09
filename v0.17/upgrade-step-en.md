@@ -17,6 +17,7 @@ Instructions: https://github.com/okex/testnets
 
 ## How can wallets, block browsers and other service providers support the network upgrade?
 Because prefix of testnet address change from okexchain to ex, please upgrade to latest sdk and join the new testnet.
+
 okexchain-go-sdk upgrade to v0.17.0：  
 https://github.com/okex/okexchain-go-sdk/releases
 
