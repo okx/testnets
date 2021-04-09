@@ -4,7 +4,7 @@
 
 尊敬的OKExChain社区用户：
 
-我们将在2021/04/10 07:00 UTC对测试网进行升级，此次升级为清数据升级，升级的chain-id为`okexchain-65`，以下为升级公告内容：
+我们将在2021/04/10 07:00 UTC对测试网进行升级，此次升级不清数据，chain-id不变，仍是`okexchain-65`，以下为升级公告内容：
 
 ## OKExChain测试网V0.17.0升级内容
 1. 原来测试网地址前缀是okexchain，新测试网更改为ex。
@@ -12,7 +12,7 @@
 
 
 ## 作为OKExChain验证人，我需要做些什么？
-本次升级为清数据升级。请于2021/04/10 07:00 UTC前停掉当前测试网运行节点，并清除掉原有数据。按照教程重加入新的测试网，我们将往Validator地址发放等量的新测试币。
+本次升级不清数据升级。请于2021/04/10 07:00 UTC前停掉当前测试网运行节点，使用新数据快照替换掉原有数据。
 创建测试网教程请参考下面链接：
 https://github.com/okex/testnets
 
@@ -27,6 +27,11 @@ https://github.com/okex/okexchain-java-sdk/releases
 
 okexchain-java-sdk更新到v0.17.0：
 https://github.com/okex/okexchain-javascript-sdk/releases
+
+## 对测试网用户有什么影响
+因测试网地址前缀更改，由原来的地址变成全新的ex开头地址。私钥不变，无需担心资产丢失。
+对于dex网页钱包和三方钱包，在未更新适配新地址前，测试网暂无法使用转账，swap和dex等功能，但不影响通过metamask调用智能合约。
+
 
 
 与往常一样，在管理任何加密货币时，请使用适当的操作程序，并警惕网络钓鱼和其他的利用手段。
