@@ -19,17 +19,17 @@ https://github.com/okex/testnets
 ## 钱包、区块浏览器、其他服务提供商，分别需要做什么？
 因原okexchain地址更新为ex前缀地址，需要升级至最新的sdk，以连接最新的区块链网络。
 
-okexchain-go-sdk更新到v0.17.0：
+okexchain-go-sdk更新到v0.17.0：  
 https://github.com/okex/okexchain-go-sdk/releases
 
-okexchain-java-sdk更新到v0.17.0：
+okexchain-java-sdk更新到v0.17.0：  
 https://github.com/okex/okexchain-java-sdk/releases
 
-okexchain-java-sdk更新到v0.17.0：
+okexchain-java-sdk更新到v0.17.0：  
 https://github.com/okex/okexchain-javascript-sdk/releases
 
 ## 对测试网用户有什么影响
-因测试网地址前缀更改，由原来的地址变成全新的ex开头地址。私钥不变，无需担心资产丢失。
+因测试网地址前缀更改，由原来的地址变成全新的ex开头地址。私钥不变，无需担心资产丢失。  
 对于dex网页钱包和三方钱包，在未更新适配新地址前，测试网暂无法使用转账，swap和dex等功能，但不影响通过metamask调用智能合约。
 
 
