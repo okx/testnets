@@ -15,7 +15,7 @@ does not get bogged down with large genesis files and status updates.
 - Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz) to okexchaind directory
 ```
 mv ~/.okexchaind/data ~/.okexchaind/data-bak
-cd ~/.okexchaind git
+cd ~/.okexchaind
 wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz
 tar -zxvf data_170.tar.gz
 ```
