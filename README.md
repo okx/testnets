@@ -22,14 +22,11 @@ tar -zxvf data_170.tar.gz
 
 - Check the snapshot by `ls -l ~/.okexchaind/data`
 ```
-total 8
-drwxr-xr-x  1026 oak  staff  32832 Mar  7 09:20 application.db
-drwxr-xr-x    10 oak  staff    320 Mar  7 09:19 blockstore.db
-drwx------     3 oak  staff     96 Mar  5 18:43 cs.wal
-drwxr-xr-x     8 oak  staff    256 Mar  7 09:19 evidence.db
--rw-------     1 oak  staff     48 Mar  7 09:17 priv_validator_state.json
-drwxr-xr-x    12 oak  staff    384 Mar  7 09:20 state.db
-drwxr-xr-x     9 oak  staff    288 Mar  7 09:19 tx_index.db
+total 140
+drwxr-xr-x 2 root root 131072 Apr 12 09:14 application.db
+drwxr-xr-x 2 root root   4096 Apr 12 09:14 blockstore.db
+-rw------- 1 root root     49 Apr 12 09:17 priv_validator_state.json
+drwxr-xr-x 2 root root   4096 Apr 12 09:14 state.db
 ```
 
 ## Start with the snapshot
