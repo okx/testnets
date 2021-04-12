@@ -7,7 +7,7 @@ OKExChain is scheduled to upgrade its testnet to V0.17.1 at 2021/04/12 07:00 UTC
 
 ## OKExChain testnet v0.17.1 upgrades details
 1. Prefix of testnet address change from okexchain to ex.
-2. Some bug fixed and improvements: https://github.com/okex/okexchain/releases/tag/v0.17.1
+2. Some bug fixed and improvements: https://github.com/okex/exchain/releases/tag/v0.17.1
 
 
 ## What are the duties of an OKExChain validator?
