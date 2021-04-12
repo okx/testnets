@@ -1,7 +1,7 @@
 # OKExChain Testnet
 
 This repo collects the genesis, snapshot data and configuration files for the various OKChain
-testnets. It exists so the [OKExChain repo](https://github.com/okex/okexchain)
+testnets. It exists so the [OKExChain repo](https://github.com/okex/exchain)
 does not get bogged down with large genesis files and status updates.
 
 ## Getting Started
@@ -59,7 +59,7 @@ When the docker container gets to the latest block, local RPC can be used：`htt
 ___
 ### 2. Start testnet with the okexchaind binary
 
-- Build okexchaind by [the latest released version v0.16.8.3](https://github.com/okex/okexchain/releases/tag/v0.16.8.3)
+- Build okexchaind by [the latest released version v0.17.1](https://github.com/okex/exchain/releases/tag/v0.17.1)
 ```
 make GenesisHeight=1121818 install
 ```
