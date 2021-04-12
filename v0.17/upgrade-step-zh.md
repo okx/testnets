@@ -1,18 +1,18 @@
 
-# OKExChain 测试网V0.17.0升级公告
+# OKExChain 测试网V0.17.1升级公告
 
 
 尊敬的OKExChain社区用户：
 
-我们将在2021/04/10 07:00 UTC对测试网进行升级，此次升级不清数据，chain-id不变，仍是`okexchain-65`，以下为升级公告内容：
+我们将在2021/04/12 07:00 UTC对测试网进行升级，此次升级不清数据，chain-id不变，仍是`okexchain-65`，以下为升级公告内容：
 
-## OKExChain测试网V0.17.0升级内容
+## OKExChain测试网V0.17.1升级内容
 1. 原来测试网地址前缀是okexchain，新测试网更改为ex。
-2. 进行了一些优化和修复了一些bug。详情见：https://github.com/okex/okexchain/releases/tag/v0.17.0
+2. 进行了一些优化和修复了一些bug。详情见：https://github.com/okex/okexchain/releases/tag/v0.17.1
 
 
 ## 作为OKExChain验证人，我需要做些什么？
-本次升级不清数据升级。请于2021/04/10 07:00 UTC前停掉当前测试网运行节点，使用新数据快照替换掉原有数据。
+本次升级不清数据升级。请于2021/04/12 07:00 UTC前停掉当前测试网运行节点，使用新数据快照替换掉原有数据。
 创建测试网教程请参考下面链接：
 https://github.com/okex/testnets
 
@@ -45,7 +45,7 @@ https://github.com/okex/okexchain-javascript-sdk/releases
 
 
 OKExChain社区  
-2021年04月10日
+2021年04月12日
 
 
 
