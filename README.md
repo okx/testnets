@@ -42,7 +42,7 @@ docker pull okexchain/fullnode-testnet:latest
 
 - run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
 ```
-docker run -d --name okexchain-testnet-fullnode -v ~/.okexchaind/data:/root/.okexchaind/data/ -p 8545:8545 okexchain/fullnode-testnet:latest
+docker run -d --name okexchain-testnet-fullnode -v ~/.okexchaind/data:/root/.okexchaind/data/ -p 8545:8545 -p 26656:26656 okexchain/fullnode-testnet:latest
 ```
 
 - view the running log
