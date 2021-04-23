@@ -1,7 +1,7 @@
 # OKExChain Testnet
 
-This repo collects the genesis, snapshot data and configuration files for the various OKChain
-testnets. It exists so the [OKExChain repo](https://github.com/okex/exchain)
+This repo collects the genesis, snapshot data and configuration files for the various ExChain
+testnets. It exists so the [ExChain repo](https://github.com/okex/exchain)
 does not get bogged down with large genesis files and status updates.
 
 ## Getting Started
@@ -12,7 +12,7 @@ does not get bogged down with large genesis files and status updates.
 
  Download URL: 
  
-- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz) to okexchaind directory
+- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz) to exchaind directory
 ```
 mv ~/.exchaind/data ~/.exchaind/data-bak
 cd ~/.exchaind
@@ -32,7 +32,7 @@ drwxr-xr-x 2 root root   4096 Apr 12 09:14 state.db
 ## Start with the snapshot
 2 ways to startup an exchain full node: 
 - start with a docker image
-- start with the okexchaind binary
+- start with the exchaind binary
 
 ### 1. Start testnet with a docker image
 - download the docker image
@@ -42,15 +42,15 @@ docker pull okexchain/fullnode-testnet:latest
 
 - run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
 ```
-docker run -d --name okexchain-testnet-fullnode -v ~/.exchaind/data:/root/.exchaind/data/ -p 8545:8545 -p 26656:26656 okexchain/fullnode-testnet:latest
+docker run -d --name exchain-testnet-fullnode -v ~/.exchaind/data:/root/.exchaind/data/ -p 8545:8545 -p 26656:26656 okexchain/fullnode-testnet:latest
 ```
 
 - view the running log
 ```
-docker logs --tail 100 -f okexchain-testnet-fullnode
+docker logs --tail 100 -f exchain-testnet-fullnode
 ```
 
-> You can stop the docker container with command: `docker stop okexchain-testnet-fullnode`, and restart the docker container with command: `docker start okexchain-testnet-fullnode`. 
+> You can stop the docker container with command: `docker stop exchain-testnet-fullnode`, and restart the docker container with command: `docker start okexchain-testnet-fullnode`. 
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
 ___
