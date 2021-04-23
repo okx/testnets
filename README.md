@@ -61,12 +61,12 @@ ___
 make GenesisHeight=1121818 install
 ```
 
-- Initialize okexchain node configurations (skip this step if you did it before)
+- Initialize exchain node configurations (skip this step if you did it before)
 ```shell script
 exchaind init your_custom_moniker --chain-id exchain-65 --home ~/.exchaind
 ````
 
-- Start okexchaind
+- Start exchaind
 ```shell script
 export EXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
 exchaind start --chain-id exchain-65 --home ~/.exchaind --p2p.seeds $EXCHAIN_SEEDS
