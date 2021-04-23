@@ -30,7 +30,7 @@ drwxr-xr-x 2 root root   4096 Apr 12 09:14 state.db
 ```
 
 ## Start with the snapshot
-2 ways to startup an okexchain full node: 
+2 ways to startup an exchain full node: 
 - start with a docker image
 - start with the okexchaind binary
 
@@ -54,22 +54,22 @@ docker logs --tail 100 -f okexchain-testnet-fullnode
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
 ___
-### 2. Start testnet with the okexchaind binary
+### 2. Start testnet with the exchaind binary
 
-- Build okexchaind by [the latest released version v0.18.0](https://github.com/okex/exchain/releases/tag/v0.18.0)
+- Build exchaind by [the latest released version v0.18.0](https://github.com/okex/exchain/releases/tag/v0.18.0)
 ```
 make GenesisHeight=1121818 install
 ```
 
 - Initialize okexchain node configurations (skip this step if you did it before)
 ```shell script
-okexchaind init your_custom_moniker --chain-id okexchain-65 --home ~/.exchaind
+exchaind init your_custom_moniker --chain-id exchain-65 --home ~/.exchaind
 ````
 
 - Start okexchaind
 ```shell script
-export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
-okexchaind start --chain-id okexchain-65 --home ~/.exchaind --p2p.seeds $OKEXCHAIN_SEEDS
+export EXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
+exchaind start --chain-id exchain-65 --home ~/.exchaind --p2p.seeds $EXCHAIN_SEEDS
 ```
 
 
