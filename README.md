@@ -53,7 +53,7 @@ docker run -d --name exchain-testnet-fullnode -v ~/.exchaind/data:/root/.exchain
 docker logs --tail 100 -f exchain-testnet-fullnode
 ```
 
-> You can stop the docker container with command: `docker stop exchain-testnet-fullnode`, and restart the docker container with command: `docker start okexchain-testnet-fullnode`. 
+> You can stop the docker container with command: `docker rm -f exchain-testnet-fullnode`
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
 ___
