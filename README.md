@@ -14,13 +14,13 @@ does not get bogged down with large genesis files and status updates.
  
 - Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz) to okexchaind directory
 ```
-mv ~/.okexchaind/data ~/.okexchaind/data-bak
-cd ~/.okexchaind
+mv ~/.exchaind/data ~/.exchaind/data-bak
+cd ~/.exchaind
 wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz
 tar -zxvf data_170.tar.gz
 ```
 
-- Check the snapshot by `ls -l ~/.okexchaind/data`
+- Check the snapshot by `ls -l ~/.exchaind/data`
 ```
 total 140
 drwxr-xr-x 2 root root 131072 Apr 12 09:14 application.db
@@ -42,7 +42,7 @@ docker pull okexchain/fullnode-testnet:latest
 
 - run docker based the snapshot downloaded in the previous step `Start based on snapshot`.
 ```
-docker run -d --name okexchain-testnet-fullnode -v ~/.okexchaind/data:/root/.okexchaind/data/ -p 8545:8545 -p 26656:26656 okexchain/fullnode-testnet:latest
+docker run -d --name okexchain-testnet-fullnode -v ~/.exchaind/data:/root/.exchaind/data/ -p 8545:8545 -p 26656:26656 okexchain/fullnode-testnet:latest
 ```
 
 - view the running log
@@ -63,13 +63,13 @@ make GenesisHeight=1121818 install
 
 - Initialize okexchain node configurations (skip this step if you did it before)
 ```shell script
-okexchaind init your_custom_moniker --chain-id okexchain-65 --home ~/.okexchaind
+okexchaind init your_custom_moniker --chain-id okexchain-65 --home ~/.exchaind
 ````
 
 - Start okexchaind
 ```shell script
 export OKEXCHAIN_SEEDS="b7c6bdfe0c3a6c1c68d6d6849f1b60f566e189dd@3.13.150.20:36656,d7eec05e6449945c8e0fd080d58977d671eae588@35.176.111.229:36656,223b5b41d1dba9057401def49b456630e1ab2599@18.162.106.25:36656"
-okexchaind start --chain-id okexchain-65 --home ~/.okexchaind --p2p.seeds $OKEXCHAIN_SEEDS
+okexchaind start --chain-id okexchain-65 --home ~/.exchaind --p2p.seeds $OKEXCHAIN_SEEDS
 ```
 
 
