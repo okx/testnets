@@ -12,12 +12,15 @@ does not get bogged down with large genesis files and status updates.
 
  Download URL: 
  
-- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz) to exchaind directory
+- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_180.tar.gz) to exchaind directory
 ```
+mv ~/.okexchaind ~/.exchaind
+mv ~/.okexchaincli ~/.exchaincli
+mv ~/.exchaind/config/okexchaind.toml ~/.exchaind/config/exchaind.toml
 mv ~/.exchaind/data ~/.exchaind/data-bak
 cd ~/.exchaind
-wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_170.tar.gz
-tar -zxvf data_170.tar.gz
+wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_180.tar.gz
+tar -zxvf data_180.tar.gz
 ```
 
 - Check the snapshot by `ls -l ~/.exchaind/data`
