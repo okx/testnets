@@ -4,10 +4,6 @@ This repo collects the genesis, snapshot data and configuration files for the va
 testnets. It exists so the [ExChain repo](https://github.com/okex/exchain)
 does not get bogged down with large genesis files and status updates.
 
-## Getting Started
-
-[Getting Started Docs](https://okexchain-docs.readthedocs.io/en/latest/getting-start/join-okexchain-testnet.html)
-
 ## Download the latest testnet data snapshot
 
  Download URL: 
