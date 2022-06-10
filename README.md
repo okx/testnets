@@ -8,15 +8,13 @@ does not get bogged down with large genesis files and status updates.
 
  Download URL: 
  
-- Download and uncompress the [snapshot](https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_180.tar.gz) to exchaind directory
+- Download and uncompress the [snapshot](https://static.okex.org/cdn/oec/snapshot/index.html) to exchaind directory
 ```
-mv ~/.okexchaind ~/.exchaind
-mv ~/.okexchaincli ~/.exchaincli
-mv ~/.exchaind/config/okexchaind.toml ~/.exchaind/config/exchaind.toml
-mv ~/.exchaind/data ~/.exchaind/data-bak
-cd ~/.exchaind
-wget -c https://ok-public-hk.oss-cn-hongkong.aliyuncs.com/cdn/okexchain/snapshot/data_180.tar.gz
-tar -zxvf data_180.tar.gz
+export EXCHAIND_PATH=~/.exchaind
+rm -rf ${EXCHAIND_PATH}/data
+cd ${EXCHAIND_PATH}
+wget -c testnet-s0-yyyy-mm-dd-height-rocksdb.tar.gz
+tar -zxvf testnet-s0-yyyy-mm-dd-height-rocksdb.tar.gz
 ```
 
 - Check the snapshot by `ls -l ~/.exchaind/data`
@@ -55,9 +53,10 @@ When the docker container gets to the latest block, local RPC can be used：`htt
 ___
 ### 2. Start testnet with the exchaind binary
 
-- Build exchaind by [the latest released version v0.18.0](https://github.com/okex/exchain/releases/tag/v0.18.0)
+- Build exchaind by [the latest released version](https://github.com/okex/exchain/releases)
 ```
-make GenesisHeight=1121818 install
+make testnet # default is leveldb
+make testnet WITH_ROCKSDB=true # if use rocksdb
 ```
 
 - Initialize exchain node configurations (skip this step if you did it before)
