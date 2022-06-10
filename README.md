@@ -1,7 +1,7 @@
 # OKC Testnet
 
-This repo collects the genesis, snapshot data and configuration files for the various ExChain
-testnets. It exists so the [ExChain repo](https://github.com/okex/exchain)
+This repo collects the genesis, snapshot data and configuration files for the various OKC
+testnets. It exists so the [OKC repo](https://github.com/okex/exchain)
 does not get bogged down with large genesis files and status updates.
 
 ## Download the latest testnet data snapshot
