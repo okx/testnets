@@ -56,7 +56,7 @@ ___
 - Build exchaind by [the latest released version](https://github.com/okex/exchain/releases)
 ```
 make testnet # default is rocksdb, you may need to execute "make rocksdb" first
-make testnet WITH_ROCKSDB=false # if use goleveldb
+make testnet WITH_ROCKSDB=false # if use leveldb
 ```
 
 - Initialize exchain node configurations (skip this step if you did it before)
