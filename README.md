@@ -4,7 +4,7 @@ This repo collects the genesis, snapshot data and configuration files for the va
 testnets. It exists so the [OKC repo](https://github.com/okex/exchain)
 does not get bogged down with large genesis files and status updates.
 
-## Download the latest testnet data snapshot
+## 1. Download the most recent testnet snapshot
 
 There are 3 types of snapshots and s0 is the one with minimum data size:
 - s0: the most recent block and world state
@@ -30,12 +30,12 @@ drwxr-xr-x 2 root root   4096 Apr 12 09:14 blockstore.db
 drwxr-xr-x 2 root root   4096 Apr 12 09:14 state.db
 ```
 
-## Start with the snapshot
+## 2. Start with the snapshot
 2 ways to startup an exchain full node: 
 - start with a docker image
 - start with the exchaind binary
 
-### 1. Start testnet with a docker image
+### 2.1. Start testnet with a docker image
 - download the docker image
 ```
 docker pull okexchain/fullnode-testnet:latest
@@ -55,7 +55,7 @@ docker logs --tail 100 -f exchain-testnet-fullnode
 When the docker container gets to the latest block, local RPC can be used：`http://localhost:8545`
 
 ___
-### 2. Start testnet with the exchaind binary
+### 2.2. Or start testnet with the exchaind binary
 
 - Build exchaind by [the latest released version](https://github.com/okex/exchain/releases)
 ```
