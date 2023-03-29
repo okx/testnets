@@ -6,8 +6,12 @@ does not get bogged down with large genesis files and status updates.
 
 ## Download the latest testnet data snapshot
 
- Download URL: 
- 
+There are 3 types of snapshots and s0 is the one with minimum data size:
+- s0: the most recent block and world state
+- s1: all historical blocks and the most recent world state
+- s3: all historical blocks and world states
+
+Download URL:  
 - Download and uncompress the [snapshot](https://static.okex.org/cdn/oec/snapshot/index.html) to exchaind directory
 ```
 export EXCHAIND_PATH=~/.exchaind
